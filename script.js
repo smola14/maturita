@@ -1,6 +1,6 @@
 'use strict';
 
-const question = document.querySelector(".question");
+const question = document.querySelector("#question");
 
 
 fetch("math.json")
