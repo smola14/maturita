@@ -1,19 +1,19 @@
 [
     {
         "id": 1,
-        "year": 2019,
-        "question": "Kolko je 3+3?",
-        "answer": 6
+        "year": 2013,
+        "question": "Päťnásobok neznámeho čísla zmenšený o 21 je práve toľko, koľko je dvojnásobok neznámeho čísla zväčšený o 15. Nájdite neznáme číslo.",
+        "answer": 12
     },
     {
         "id": 2,
-        "year": 2019,
-        "question": "Kolko je 3+4?",
-        "answer": 6
+        "year": 2013,
+        "question": "Nádrž tvaru kvádra má vnútorné rozmery vodorovného dna uvedené na obrázku. Hladina vody v nádrži siaha do výšky 980cm. Koľko metrov kubických vody je v nádrži?",
+        "answer": 78.4
     },
     {
         "id": 3,
-        "year": 2019,
+        "year": 2013,
         "question": "Kolko je 3+5?",
         "answer": 6
     }
