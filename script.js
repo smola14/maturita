@@ -7,7 +7,7 @@ const answer = document.querySelector("#answer");
 fetch("math.json")
     .then(response=>response.json())
     .then(data=>{
-        question.textContent=data[0].question;
+        question.textContent=data[Math.floor(Math.random() * 3)].question;
 
         answer.addEventListener("submit", function(e){
           e.preventDefault();
