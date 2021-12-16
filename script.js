@@ -10,6 +10,15 @@ fetch("math.json")
         question.textContent=data[0].question;
     })
 
+answer.addEventListener("submit", function(e){
+  e.preventDefault();
+  const value = answer.querySelector('input[type="text"]').value;
+  if(value==3){
+    console.log("spravne");
+  }else{
+    console.log("nespravne")
+  }
+});
 
 
 
