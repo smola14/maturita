@@ -14,7 +14,7 @@
     {
         "id": 3,
         "year": 2013,
-        "question": "Kolko je 3+5?",
-        "answer": 6
+        "question": "Populácia mravcov vzrastie za jeden týždeň o 5%. Vypočítajte, o koľko percent vzrastie populácia mravcov takýmto tempom rastu za osem týždňov.",
+        "answer": 47.75
     }
 ]
