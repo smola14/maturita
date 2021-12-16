@@ -28,7 +28,7 @@
         "year": 2013,
         "question": "Na obrázku je znázornené vekové zloženie členov turistického krúžku. Zistite v rokoch medián veku členov turistického krúžku.",
         "isPicture":true,
-        "picture": "5.jpg",
+        "picture": "/math/5.jpg",
         "answer": 47.75
     },
     {
