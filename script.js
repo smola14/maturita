@@ -12,7 +12,8 @@ fetch("math.json")
 
         answer.addEventListener("submit", function(e){
           e.preventDefault();
-          const value = answer.querySelector('input[type="text"]').value;
+          var value = answer.querySelector('input[type="text"]').value;
+          value = value.replace(/,/g, '.')
           if(value==data[randomNumb].answer){
             console.log("spravne");
           }else{
