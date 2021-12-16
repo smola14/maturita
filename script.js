@@ -15,7 +15,7 @@ fetch("/otazky/math/math.json")
 
         question.textContent=otazka.question;
         if(otazka.isPicture){
-          imgQ.src = "kokot";
+          imgQ.src = otazka.picture;
         }
 
         answer.addEventListener("submit", function(e){
