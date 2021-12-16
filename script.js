@@ -5,7 +5,7 @@ const answer = document.querySelector("#answer");
 const imgQ = document.querySelector("#imgQ");
 var randomNumb;
 
-fetch("math.json")
+fetch("/otazky/math/math.json")
     .then(response=>response.json())
     .then(data=>{
         randomNumb = Math.floor(Math.random() * 3);
