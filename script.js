@@ -2,7 +2,7 @@
 
 const question = document.querySelector("#question");
 const answer = document.querySelector("#answer");
-
+var randomNumb;
 
 fetch("math.json")
     .then(response=>response.json())
