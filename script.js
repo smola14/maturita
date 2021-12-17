@@ -5,6 +5,7 @@ const answer = document.querySelector("#answer");
 const imgQ = document.querySelector("#imgQ");
 const h4 = document.querySelector("h4");
 const input = document.querySelector("input");
+const kontakt = document.querySelector(".kontakt");
 
 var randomNumb;
 var otazka;
@@ -32,6 +33,10 @@ fetch("/otazky/math/math.json")
           }else{
             input.style.backgroundColor="red";
           }
+        });
+
+        kontakt.addEventListener("click", function(e){
+          e.preventDefault();
         });
     })
 
