@@ -12,7 +12,7 @@ fetch("/otazky/math/math.json")
         randomNumb = Math.floor(Math.random() * 30);
         otazka = data[randomNumb];
 
-        question.textContent=otazka.question;
+        question.textContent=otazka.id + ". " + otazka.question;
         if(otazka.isPicture){
           imgQ.src = otazka.picture;
         }
