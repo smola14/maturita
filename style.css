@@ -7,3 +7,8 @@ body{
     height: 100vh;
     font-family: 'Mukta', sans-serif;
 }
+
+.blurry{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
