@@ -166,7 +166,7 @@
         "year": 2013,
         "question": "Dĺžka hrany kocky ABCDEFGH je 4cm. Vypočítajte povrch ihlana ABCDH.",
         "options": "A) 64/3 cm2; B) 32 + 16; C) 4; D) 96cm2; E) 32cm2",
-        "answer": 3
+        "answer": "B"
     },
     {
         "id": 26,
