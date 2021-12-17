@@ -3,6 +3,7 @@
 const question = document.querySelector("#question");
 const answer = document.querySelector("#answer");
 const imgQ = document.querySelector("#imgQ");
+const h3 = document.querySelector("h3");
 var randomNumb;
 var otazka;
 
@@ -24,9 +25,9 @@ fetch("/otazky/math/math.json")
           value = value.replace(/,/g, '.');
 
           if(value==otazka.answer){
-            console.log("spravne");
+            h3.textContent=("spravne");
           }else{
-            console.log("nespravne")
+            h3.textContent=("nespravne")
           }
         });
     })
