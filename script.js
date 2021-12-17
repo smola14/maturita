@@ -9,7 +9,7 @@ var otazka;
 fetch("/otazky/math/math.json")
     .then(response=>response.json())
     .then(data=>{
-        randomNumb = Math.floor(Math.random() * 3);
+        randomNumb = Math.floor(Math.random() * 30);
         otazka = data[randomNumb];
 
         question.textContent=otazka.question;
