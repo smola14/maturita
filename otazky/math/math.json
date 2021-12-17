@@ -107,7 +107,7 @@
         "question": "Vo štvoruholníku ABCD s dĺžkami strán | AB | = 9, | BC | = 11 a | CD | = 3 sú vnútorné uhly pri vrcholoch A a C pravé (pozrite obrázok). Určte dĺžku strany AD štvoruholníka ABCD.",
         "answer": 7,
         "isPicture":true,
-        "picture": "otazky/math/15.jpg"
+        "picture": "otazky/math/16.jpg"
     },
     {
         "id": 17,
@@ -166,31 +166,36 @@
         "year": 2013,
         "question": "Dĺžka hrany kocky ABCDEFGH je 4cm. Vypočítajte povrch ihlana ABCDH.",
         "options": "A) 64/3 cm2; B) 32 + 16; C) 4; D) 96cm2; E) 32cm2",
-        "answer": "B"
+        "answer": "B",
+        "isPicture":true,
+        "picture": "otazky/math/25.jpg"
     },
     {
         "id": 26,
         "year": 2013,
-        "question": "Populácia mravcov vzrastie za jeden týždeň o 5%. Vypočítajte, o koľko percent vzrastie populácia mravcov takýmto tempom rastu za osem týždňov.",
-        "answer": 47.75
+        "question": "Ak výrok B  ∧C je pravdivý a výrok B ⇒A je nepravdivý, potom pre pravdivostnú hodnotu výrokov A, B, C platí:",
+        "options": "A) výrok A je pravdivý, výrok B je pravdivý, výrok C je pravdivý; B) výrok A je pravdivý, výrok B je pravdivý, výrok C je nepravdivý; C) výrok A je nepravdivý, výrok B je pravdivý, výrok C je pravdivý; D) výrok A je pravdivý, výrok B je nepravdivý, výrok C je pravdivý; E) výrok A je nepravdivý, výrok B je nepravdivý, výrok C je pravdivý",
+        "answer": "C"
     },
     {
         "id": 27,
         "year": 2013,
-        "question": "Populácia mravcov vzrastie za jeden týždeň o 5%. Vypočítajte, o koľko percent vzrastie populácia mravcov takýmto tempom rastu za osem týždňov.",
-        "answer": 47.75
+        "question": "Dané sú fukncie f(1) až f(6). Vyberte možnost, v ktorej sú z daných funkcii f(1) až f(6) uvedené len všetky funkcie rastúce na celom svojom definičnom obore.",
+        "options": "A) f(1), f(6); B) f(2), f(4), f(5); C) f(2), f(3), f(4); D) f(3), f(4), f(5); E) f(4), f(5)",
+        "answer": "E"
     },
     {
         "id": 28,
         "year": 2013,
-        "question": "Populácia mravcov vzrastie za jeden týždeň o 5%. Vypočítajte, o koľko percent vzrastie populácia mravcov takýmto tempom rastu za osem týždňov.",
-        "answer": 47.75
+        "question": "Šperk je vyrobený tak, že pravidelný osemsten zo zlata je zaliaty do kocky zo skla(pozrite obrázok). Určte pomer objemu skla a objemu zlata v šperku.(Pravidelný osemsten je teleso, ktoré vznikne zjednotením dvoch zhodných pravidelných ihlanov so spoločnou štvorcovou podstavou. Steny ihlanov sú rovnostranné trojuholníky.)",
+        "options": "A) 3:1; B) 4:1; C) 5:1; D) 6:1; E) 7:1",
+        "answer": "C"
     },
     {
         "id": 29,
         "year": 2013,
-        "question": "Populácia mravcov vzrastie za jeden týždeň o 5%. Vypočítajte, o koľko percent vzrastie populácia mravcov takýmto tempom rastu za osem týždňov.",
-        "answer": 47.75
+        "question": "Určte počet celých čísel, ktoré vyhovujú nerovnici |x - 4| < 2π.",
+        "answer": "E"
     },
     {
         "id": 30,
