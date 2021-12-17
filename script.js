@@ -35,25 +35,9 @@ fetch("/otazky/math/math.json")
             input.style.backgroundColor="red";
           }
         });
+      })
 
-        kontakt.addEventListener("click", function(e){
-          e.preventDefault();
-          body.classList.toggle("blurry");
-          if(body.classList.toggle("blurry")==true){
-            body.addEventListener("click",function(e){
-              e.preventDefault();
-              body.classList.toggle("blurry");
-            })
-          }
-        });
-    })
-
-
-
-
-
-
-
-
-
-
+kontakt.addEventListener("click", function(e){
+  e.preventDefault();
+  body.classList.toggle("blurry");
+})
