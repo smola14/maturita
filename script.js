@@ -3,8 +3,8 @@
 const question = document.querySelector("#question");
 const answer = document.querySelector("#answer");
 const imgQ = document.querySelector("#imgQ");
-const h3 = document.querySelector("h3");
 const h4 = document.querySelector("h4");
+
 var randomNumb;
 var otazka;
 
@@ -27,9 +27,9 @@ fetch("/otazky/math/math.json")
           value = value.replace(/,/g, '.');
 
           if(value==otazka.answer){
-            h3.textContent=("spravne");
+            answer.backgroundColor="green";
           }else{
-            h3.textContent=("nespravne")
+            answer.backgroundColor="red";
           }
         });
     })
