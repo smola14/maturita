@@ -12,3 +12,11 @@ body{
     filter: blur(8px);
     -webkit-filter: blur(8px);
 }
+
+.display{
+    display: none;
+}
+
+.form-contact{
+    filter: none!important;
+}
