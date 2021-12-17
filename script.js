@@ -4,6 +4,7 @@ const question = document.querySelector("#question");
 const answer = document.querySelector("#answer");
 const imgQ = document.querySelector("#imgQ");
 const h4 = document.querySelector("h4");
+const input = document.querySelector("input");
 
 var randomNumb;
 var otazka;
@@ -27,9 +28,9 @@ fetch("/otazky/math/math.json")
           value = value.replace(/,/g, '.');
 
           if(value==otazka.answer){
-            answer.backgroundColor="green";
+            input.style.backgroundColor="green";
           }else{
-            answer.backgroundColor="red";
+            input.style.backgroundColor="red";
           }
         });
     })
