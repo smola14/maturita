@@ -39,7 +39,7 @@ fetch("/otazky/math/math.json")
         kontakt.addEventListener("click", function(e){
           e.preventDefault();
           body.classList.toggle("blurry");
-          if(body.classList.toggle("blurry")==false){
+          if(body.classList.toggle("blurry")==true){
             body.addEventListener("click",function(e){
               e.preventDefault();
               body.classList.toggle("blurry");
