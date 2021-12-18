@@ -8,6 +8,7 @@ const input = document.querySelector("input");
 const kontakt = document.querySelector(".kontakt");
 const main = document.querySelector(".main");
 const contactForm = document.querySelector("#form-contact");
+const reload = document.querySelector(".reload");
 
 var randomNumb;
 var otazka;
@@ -18,11 +19,7 @@ fetch("/otazky/math/math.json")
         randomNumb = Math.floor(Math.random() * 30);
         otazka = data[randomNumb];
 
-        question.textContent=otazka.id + ". " + otazka.question;
-        if(otazka.isPicture){
-          imgQ.src = otazka.picture;
-        }
-        h4.textContent = otazka.options;
+        showQuestion(otazka);
 
         answer.addEventListener("submit", function(e){
           e.preventDefault();
@@ -36,7 +33,27 @@ fetch("/otazky/math/math.json")
             input.style.backgroundColor="red";
           }
         });
+
+        reload.addEventListener("click", function(e){
+          e.preventDefault();
+          randomNumb = Math.floor(Math.random() * 30);
+          otazka = data[randomNumb];
+          showQuestion(otazka);
+          answer.querySelector('input[type="text"]').value = '';
+          input.style.backgroundColor="white";
+        });
       })
+function showQuestion(otazka){
+  question.textContent=otazka.id + ". " + otazka.question;
+  if(otazka.isPicture){
+    imgQ.src = otazka.picture;
+  }
+  h4.textContent = otazka.options;
+}
+
+
+
+
 
 
 
