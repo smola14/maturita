@@ -6,6 +6,7 @@
 body{
     height: 100vh;
     font-family: 'Roboto', sans-serif;
+    color: #00274C;
 }
 
 .blurry{
@@ -36,4 +37,5 @@ input[type="text"]{
 #answer{
     position: absolute;
     bottom: 0;
+    margin-bottom: 10px;
 }
