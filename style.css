@@ -17,6 +17,11 @@ body{
     display: none;
 }
 
+input[type="text"]{
+    border: 0;
+    background: lightgray;
+}
+
 #form-contact{
     height: 300px;
     width: 350px;

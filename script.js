@@ -40,7 +40,7 @@ fetch("/otazky/math/math.json")
           otazka = data[randomNumb];
           showQuestion(otazka);
           answer.querySelector('input[type="text"]').value = '';
-          input.style.backgroundColor="white";
+          input.style.backgroundColor="lightgray";
         });
       })
 function showQuestion(otazka){
