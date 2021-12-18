@@ -38,6 +38,10 @@ input[type="text"]{
     margin-bottom: 10px;
 }
 
+h4{
+    background-color:white;
+}
+
 .lead{
     font-size: 1.5rem;
     background-color: white;
