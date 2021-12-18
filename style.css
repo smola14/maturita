@@ -24,7 +24,7 @@ input[type="text"]{
 }
 
 .navbar{
-    border-bottom: 2px solid #EE6C4D;
+    border-bottom: 3px solid #EE6C4D;
     background-color: #293241!important;
 }
 
@@ -43,6 +43,6 @@ h4{
 }
 
 .lead{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: white;
 }
