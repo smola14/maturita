@@ -8,6 +8,9 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: white;
     color:#3D5A80;
+    background-image: radial-gradient(darkgray 20%, transparent 1%),radial-gradient(#fafafa 20%, transparent 1%);
+    background-position: 0 0, 20px 20px;
+    background-size: 20px 20px;
     /* background: -webkit-gradient(linear, left top, right top, color-stop(50%, #3D5A80), color-stop(50%, white));
     background: linear-gradient(90deg, #3D5A80 50%, white 50%); */
 }
