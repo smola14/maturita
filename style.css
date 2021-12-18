@@ -6,13 +6,9 @@
 body{
     height: 100vh;
     font-family: 'Roboto', sans-serif;
+    color: white;
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, #3D5A80), color-stop(50%, white));
     background: linear-gradient(90deg, #3D5A80 50%, white 50%);
-}
-
-.blurry{
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
 }
 
 .display{
@@ -25,19 +21,12 @@ input[type="text"]{
 }
 
 .navbar{
-    border: 2px solid red;
+    border-bottom: 2px solid #EE6C4D;
     background-color: #293241!important;
 }
 
 #question{
     text-align: justify;
-}
-
-#form-contact{
-    height: 300px;
-    width: 350px;
-    position: absolute;
-    background-color:pink;
 }
 
 #answer{
