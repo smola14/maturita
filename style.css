@@ -45,4 +45,5 @@ h4{
 .lead{
     font-size: 1.2rem;
     background-color: white;
+    word-spacing: 2.5px;
 }
