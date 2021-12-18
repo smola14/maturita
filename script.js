@@ -47,6 +47,8 @@ function showQuestion(otazka){
   question.textContent=otazka.id + ". " + otazka.question;
   if(otazka.isPicture){
     imgQ.src = otazka.picture;
+  }else{
+    imgQ.src = "";
   }
   h4.textContent = otazka.options;
 }
