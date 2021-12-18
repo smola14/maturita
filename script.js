@@ -38,9 +38,5 @@ fetch("/otazky/math/math.json")
         });
       })
 
-kontakt.addEventListener("click", function(e){
-  e.preventDefault();
-  main.classList.toggle("blurry");
-  contactForm.classList.toggle("d-none");
-})
+
 
