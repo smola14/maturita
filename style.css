@@ -6,7 +6,8 @@
 body{
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    color: #00274C;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #3D5A80), color-stop(50%, white));
+    background: linear-gradient(90deg, #3D5A80 50%, white 50%);
 }
 
 .blurry{
@@ -21,6 +22,11 @@ body{
 input[type="text"]{
     border: 0;
     background: lightgray;
+}
+
+.navbar{
+    border: 2px solid red;
+    background-color: #293241!important;
 }
 
 #question{
