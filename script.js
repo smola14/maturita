@@ -10,6 +10,7 @@ const main = document.querySelector(".main");
 const contactForm = document.querySelector("#form-contact");
 const reload = document.querySelector(".btn-reload");
 const submit = document.querySelector(".btn-submit");
+const year = document.querySelector("#year");
 
 var randomNumb;
 var otazka;
@@ -45,6 +46,8 @@ fetch("/otazky/math/math.json")
         });
       })
 function showQuestion(otazka){
+  year.textContent = otazka.year;
+  console.log(year.textContent);
   question.textContent=otazka.id + ". " + otazka.question;
   if(otazka.isPicture){
     imgQ.src = otazka.picture;
