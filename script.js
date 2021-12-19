@@ -8,7 +8,8 @@ const input = document.querySelector("input");
 const kontakt = document.querySelector(".kontakt");
 const main = document.querySelector(".main");
 const contactForm = document.querySelector("#form-contact");
-const reload = document.querySelector(".reload");
+const reload = document.querySelector(".btn-reload");
+const submit = document.querySelector(".btn-submit");
 
 var randomNumb;
 var otazka;
