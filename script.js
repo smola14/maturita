@@ -47,11 +47,12 @@ fetch("/otazky/math/math.json")
 function showQuestion1_20(otazka){
   question.textContent = otazka.id + '. ' + otazka.question;
   (otazka.isPicture) ? img.src = otazka.picture : img.src = "";
+  options.textContent = otazka.options;
   answer.innerHTML = "<input type='text'><button class='btn btn-submit'>submit</button>";
 }
 
 function showQuestion21_30(otazka){
-  question.textContent = otazka.question;
+  question.textContent = otazka.id + '. ' + otazka.question;
   (otazka.isPicture) ? img.src = otazka.picture : img.src = "";
   options.textContent = otazka.options;
   answer.innerHTML = "<button class='btn btn-A mx-2'>A</button><button class='btn btn-B mx-2'>B</button><button class='btn btn-C mx-2'>C</button><button class='btn btn-D mx-2'>D</button><button class='btn btn-E mx-2'>E</button>";
