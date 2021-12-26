@@ -22,7 +22,7 @@
     {
         "id": 4,
         "year": 2013,
-        "question": "Vypočítajte polomer kružnice k určenej rovnicou x2+y2+24x+10y = 0",
+        "question": "Vypočítajte polomer kružnice k určenej rovnicou \\(x^2 + y^2 - 24x + 10y = 0\\)",
         "answer": 13
     },
     {

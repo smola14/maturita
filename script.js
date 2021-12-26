@@ -27,14 +27,14 @@ var otazka;
 fetch("/otazky/math/math.json")
     .then(response=>response.json())
     .then(data=>{      
-      randomNumb = Math.floor(Math.random() * 30);
+      randomNumb = Math.floor(Math.random() * 5);
       otazka = data[randomNumb];
       (otazka.id<21) ? showQuestion1_20(otazka) : showQuestion21_30(otazka);
     
       reload.addEventListener("click", function(e){
         e.preventDefault();
         body.style.backgroundColor="white";
-        randomNumb = Math.floor(Math.random() * 30);
+        randomNumb = Math.floor(Math.random() * 5);
         otazka = data[randomNumb];
         if(otazka.id<21){
           showQuestion1_20(otazka);
@@ -46,6 +46,7 @@ fetch("/otazky/math/math.json")
 
 function showQuestion1_20(otazka){
   question.textContent = otazka.year+" "+ otazka.id + '. ' + otazka.question;
+  console.log(otazka.question);
   (otazka.isPicture) ? img.src = otazka.picture : img.src = "";
   answer.innerHTML = "<input type='text'><button class='btn btn-submit'>submit</button>";
 }
@@ -86,7 +87,7 @@ function wrongAnswer(){
 const otazky = {
   "id": 30,
   "year": 2013,
-  "question": "$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$",
+  "question": "Vypočítajte polomer kružnice k určenej rovnicou \\(x^2 + y^2 - 24x + 10y = 0\\)",
   "answer": 47.75
 }
 
