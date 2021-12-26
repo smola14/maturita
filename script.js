@@ -53,7 +53,7 @@ function showQuestion1_20(otazka){
 function showQuestion21_30(otazka){
   question.textContent = otazka.year+" "+ otazka.id + '. ' + otazka.question;
   (otazka.isPicture) ? img.src = otazka.picture : img.src = "";
-  answer.innerHTML = "<button class='btn btn-A mx-2'>A</button>"+ otazka.option1 +"<button class='btn btn-B mx-2'>B</button>"+ otazka.option2 +"<button class='btn btn-C mx-2'>C</button>"+ otazka.option3 +"<button class='btn btn-D mx-2'>D</button>"+ otazka.option4 +"<button class='btn btn-E mx-2'>E</button>"+ otazka.option5;
+  answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button>"+ otazka.option1 +"</div><div class='d-block'><button class='btn btn-B m-2'>B</button>"+ otazka.option2 +"</div><div class='d-block'><button class='btn btn-C m-2'>C</button>"+ otazka.option3 +"</div><div class='d-block'><button class='btn btn-D m-2'>D</button>"+ otazka.option4 +"</div><div class='d-block'><button class='btn btn-E m-2'>E</button>"+ otazka.option5+"<div>";
 }
 
 answer.addEventListener("submit", function(e){
