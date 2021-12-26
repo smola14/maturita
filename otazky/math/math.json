@@ -9,6 +9,8 @@
         "id": 2,
         "year": 2013,
         "question": "Nádrž tvaru kvádra má vnútorné rozmery vodorovného dna uvedené na obrázku. Hladina vody v nádrži siaha do výšky 980cm. Koľko metrov kubických vody je v nádrži?",
+        "isPicture": true,
+        "picture" : "otazky/math/2.jpg",
         "answer": 78.4
     },
     {
@@ -36,7 +38,7 @@
         "year": 2013,
         "question": "Dĺžky strán trojuholníka sú 3cm, 4cm a 6cm. Určte v stupňoch veľkosť tupého vnútorného uhla trojuholníka.",
         "isPicture":true,
-        "picture": "otazky/math/5.jpg",
+        "picture": "otazky/math/6.jpg",
         "answer": 117.28
     },
     {
@@ -56,7 +58,7 @@
         "year": 2013,
         "question": "Graf lineárnej funkcie má smernicu 2, prechádza bodom A [2;8] a súradnicovú os y pretína v bode B (pozrite obrázok). Určte vzdialenosť bodu B od začiatku súradnicovej sústavy O [0;0].",
         "isPicture":true,
-        "picture": "otazky/math/5.jpg",
+        "picture": "otazky/math/9.jpg",
         "answer": 4
     },
     {
@@ -70,7 +72,7 @@
         "year": 2013,
         "question": "Trojuholník ABC a trojuholník ADE sú podobné (pozrite obrázok). Vypočítajte v centimetroch štvorcových obsah trojuholníka ABC, ak dĺžka strany DE je 12cm, dĺžka strany BC je 16cm a obsah trojuholníka ADE je 27cm2.",
         "isPicture":true,
-        "picture": "otazky/math/5.jpg",
+        "picture": "otazky/math/11.jpg",
         "answer": 48
     },
     {
@@ -85,7 +87,7 @@
         "question": "Dĺžka strany štvorca ABCD je 5cm. Body E, F a G sú stredy strán štvorca (pozrite obrázok). Vypočítajte v centimetroch štvorcových obsah vyšrafovanej časti štvorca ABCD.",
         "answer": 15.63,
         "isPicture":true,
-        "picture": "otazky/math/5.jpg"
+        "picture": "otazky/math/13.jpg"
     },
     {
         "id": 14,
@@ -99,7 +101,7 @@
         "question": "V tabuľke je harmonogram sobotňajších tenisových tréningov mladších žiakov počas zimnej halovej sezóny. Pred začiatkom letnej sezóny sa pripravujenový harmonogram tréningov. Tomáš Kučera bude môcť trénovať len predpoludním,sestry Kováčové budú musieť trénovať v ľubovoľnom poradí za sebou. Ostatným žiakom vyhovujú všetky termíny. Koľko rôznych harmonogramov tenisových tréningov za uvedených podmienok je možné vytvoriť pre týchto osem žiakov?",
         "answer": 3840,
         "isPicture":true,
-        "picture": "otazky/math/5.jpg"
+        "picture": "otazky/math/15.jpg"
     },
     {
         "id": 16,
@@ -107,7 +109,7 @@
         "question": "Vo štvoruholníku ABCD s dĺžkami strán | AB | = 9, | BC | = 11 a | CD | = 3 sú vnútorné uhly pri vrcholoch A a C pravé (pozrite obrázok). Určte dĺžku strany AD štvoruholníka ABCD.",
         "answer": 7,
         "isPicture":true,
-        "picture": "otazky/math/5.jpg"
+        "picture": "otazky/math/16.jpg"
     },
     {
         "id": 17,
@@ -188,7 +190,7 @@
         "option5": "36cm2",
         "answer": "B",
         "isPicture":true,
-        "picture": "otazky/math/5.jpg"
+        "picture": "otazky/math/25.jpg"
     },
     {
         "id": 26,
@@ -210,18 +212,21 @@
         "option3": "f(2), f(3), f(4)",
         "option4": "f(3), f(4), f(5)",
         "option5": "f(4), f(5)",
+        "isPicture" : true,
+        "picture" : "otazky/math/27.jpg",
         "answer": "E"
     },
     {
         "id": 28,
         "year": 2013,
         "question": "Šperk je vyrobený tak, že pravidelný osemsten zo zlata je zaliaty do kocky zo skla(pozrite obrázok). Určte pomer objemu skla a objemu zlata v šperku.(Pravidelný osemsten je teleso, ktoré vznikne zjednotením dvoch zhodných pravidelných ihlanov so spoločnou štvorcovou podstavou. Steny ihlanov sú rovnostranné trojuholníky.)",
-        "options": "A) 3:1; B) 4:1; C) 5:1; D) 6:1; E) 7:1",
         "option1": "3:1",
         "option2": "4:1",
         "option3": "5:1",
         "option4": "6:1",
         "option5": "7:1",
+        "isPicture" : true,
+        "picture" : "otazky/math/28.jpg",
         "answer": "C"
     },
     {
