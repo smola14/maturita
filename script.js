@@ -86,9 +86,12 @@ function wrongAnswer(){
 const otazky = {
   "id": 30,
   "year": 2013,
-  "question": "When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$",
+  "question": "$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$",
   "answer": 47.75
 }
+
+document.querySelector("h5").textContent = otazky.question;
+console.log(otazky.question);
 
 
 
