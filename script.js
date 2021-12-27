@@ -280,7 +280,7 @@ function loadQuestion() {
   body.style.backgroundColor="white";
   randomNumb = Math.floor(Math.random() * 15);
   otazka = otazky[randomNumb];
-  question.innerHTML = otazka.question; 
+  question.textContent = otazka.question; 
   renderMathInElement(question, opts);
   (otazka.id<21) ? showQuestion1_20(otazka) : showQuestion21_30(otazka);
 }
