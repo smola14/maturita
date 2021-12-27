@@ -273,19 +273,21 @@ const otazky = [
       "option3": "otazky/math/30oC.png",
       "option4": "otazky/math/30oD.png",
       "option5": "otazky/math/30oE.png",
+      "isPicture" : true,
+      "picture" : "otazky/math/30.png",
       "answer": "B"
   }
 
 ]
 
-var randomNumb = 29;
+var randomNumb;
 var otazka;
 let opts;
 
 function loadQuestion() {
     body.style.backgroundColor="white";
     randomNumb = Math.floor(Math.random() * 30);
-    otazka = otazky[randomNumb];
+    otazka = otazky[29];
     question.textContent = otazka.question; 
     renderMathInElement(question, opts);
     (otazka.id<21) ? showQuestion1_20(otazka) : showQuestion21_30(otazka);
