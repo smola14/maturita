@@ -275,14 +275,14 @@ const otazky = [
 var randomNumb;
 var otazka;
    
-randomNumb = Math.floor(Math.random() * 30);
+randomNumb = Math.floor(Math.random() * 4);
 otazka = otazky[randomNumb];
 (otazka.id<21) ? showQuestion1_20(otazka) : showQuestion21_30(otazka);
     
 reload.addEventListener("click", function(e){
   e.preventDefault();
   body.style.backgroundColor="white";
-  randomNumb = Math.floor(Math.random() * 30);
+  randomNumb = Math.floor(Math.random() * 4);
   otazka = otazky[randomNumb];
   if(otazka.id<21){
     showQuestion1_20(otazka);
