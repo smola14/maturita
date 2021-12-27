@@ -45,7 +45,7 @@ const otazky = [
   {
       "id": 4,
       "year": 2013,
-      "question": "Vypočítajte polomer kružnice k určenej rovnicou \\(x^2 + y^2 - 24x + 10y = 0\\)",
+      "question": "Vypočítajte polomer kružnice k určenej rovnicou $x^2 + y^2 + 24x + 10y = 0$",
       "answer": 13
   },
   {
@@ -275,14 +275,14 @@ const otazky = [
 var randomNumb;
 var otazka;
    
-randomNumb = Math.floor(Math.random() * 7);
+randomNumb = Math.floor(Math.random() * 30);
 otazka = otazky[randomNumb];
 (otazka.id<21) ? showQuestion1_20(otazka) : showQuestion21_30(otazka);
     
 reload.addEventListener("click", function(e){
   e.preventDefault();
   body.style.backgroundColor="white";
-  randomNumb = Math.floor(Math.random() * 7);
+  randomNumb = Math.floor(Math.random() * 30);
   otazka = otazky[randomNumb];
   if(otazka.id<21){
     showQuestion1_20(otazka);
