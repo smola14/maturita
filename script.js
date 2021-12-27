@@ -33,7 +33,7 @@ const otazky = [
       "year": 2013,
       "question": "Nádrž tvaru kvádra má vnútorné rozmery vodorovného dna uvedené na obrázku. Hladina vody v nádrži siaha do výšky 980 cm. Koľko metrov kubických vody je v nádrži?",
       "isPicture": true,
-      "picture" : "otazky/math/2.jpg",
+      "picture" : "otazky/math/2.png",
       "answer": 78.4
   },
   {
@@ -45,7 +45,7 @@ const otazky = [
   {
       "id": 4,
       "year": 2013,
-      "question": "Vypočítajte polomer kružnice k určenej rovnicou $a^3$",
+      "question": "Vypočítajte polomer kružnice k určenej rovnicou \\(x^2 + y^2 + 24x + 10y = 0\\)",
       "answer": 13
   },
   {
@@ -53,7 +53,7 @@ const otazky = [
       "year": 2013,
       "question": "Na obrázku je znázornené vekové zloženie členov turistického krúžku. Zistite v rokoch medián veku členov turistického krúžku.",
       "isPicture":true,
-      "picture": "otazky/math/5.jpg",
+      "picture": "otazky/math/5.png",
       "answer": 47.75
   },
   {
@@ -61,13 +61,13 @@ const otazky = [
       "year": 2013,
       "question": "Dĺžky strán trojuholníka sú 3cm, 4cm a 6cm. Určte v stupňoch veľkosť tupého vnútorného uhla trojuholníka.",
       "isPicture":true,
-      "picture": "otazky/math/6.jpg",
+      "picture": "otazky/math/6.png",
       "answer": 117.28
   },
   {
       "id": 7,
       "year": 2013,
-      "question": "Presná hodnota čísla 17! je 355 687 428 096 000. Hodnota čísla 17! zobrazená po výpočte na kalkulačke je 3,556874281.\\(10^14\\). Vypočítajte rozdiel hodnoty čísla 17! zobrazenej na kalkulačke a presnej hodnoty čísla 17!.",
+      "question": "Presná hodnota čísla 17! je 355 687 428 096 000. Hodnota čísla 17! zobrazená po výpočte na kalkulačke je 3,556874281.\\(10^(14)\\). Vypočítajte rozdiel hodnoty čísla 17! zobrazenej na kalkulačke a presnej hodnoty čísla 17!.",
       "answer": 4000
   },
   {
@@ -81,21 +81,21 @@ const otazky = [
       "year": 2013,
       "question": "Graf lineárnej funkcie má smernicu 2, prechádza bodom A [2;8] a súradnicovú os y pretína v bode B (pozrite obrázok). Určte vzdialenosť bodu B od začiatku súradnicovej sústavy O [0;0].",
       "isPicture":true,
-      "picture": "otazky/math/9.jpg",
+      "picture": "otazky/math/9.png",
       "answer": 4
   },
   {
       "id": 10,
       "year": 2013,
-      "question": "Vypočítajte koreň rovnice logx+log(x+3) =1.",
+      "question": "Vypočítajte koreň rovnice log x + log(x+3) = 1.",
       "answer": 2
   },
   {
       "id": 11,
       "year": 2013,
-      "question": "Trojuholník ABC a trojuholník ADE sú podobné (pozrite obrázok). Vypočítajte v centimetroch štvorcových obsah trojuholníka ABC, ak dĺžka strany DE je 12cm, dĺžka strany BC je 16cm a obsah trojuholníka ADE je 27cm2.",
+      "question": "Trojuholník ABC a trojuholník ADE sú podobné (pozrite obrázok). Vypočítajte v centimetroch štvorcových obsah trojuholníka ABC, ak dĺžka strany DE je 12cm, dĺžka strany BC je 16cm a obsah trojuholníka ADE je 27\\(cm^2\\).",
       "isPicture":true,
-      "picture": "otazky/math/11.jpg",
+      "picture": "otazky/math/11.png",
       "answer": 48
   },
   {
@@ -110,12 +110,12 @@ const otazky = [
       "question": "Dĺžka strany štvorca ABCD je 5cm. Body E, F a G sú stredy strán štvorca (pozrite obrázok). Vypočítajte v centimetroch štvorcových obsah vyšrafovanej časti štvorca ABCD.",
       "answer": 15.63,
       "isPicture":true,
-      "picture": "otazky/math/13.jpg"
+      "picture": "otazky/math/13.png"
   },
   {
       "id": 14,
       "year": 2013,
-      "question": "Určte najmenšie celé číslo x, ktoré je riešením nerovnice 17 - 15x - 2x2 > 0.",
+      "question": "Určte najmenšie celé číslo x, ktoré je riešením nerovnice \\sqrt\\(17 - 15x - 2x^2\\) > 0.",
       "answer": -8
   },
   {
@@ -124,20 +124,20 @@ const otazky = [
       "question": "V tabuľke je harmonogram sobotňajších tenisových tréningov mladších žiakov počas zimnej halovej sezóny. Pred začiatkom letnej sezóny sa pripravujenový harmonogram tréningov. Tomáš Kučera bude môcť trénovať len predpoludním,sestry Kováčové budú musieť trénovať v ľubovoľnom poradí za sebou. Ostatným žiakom vyhovujú všetky termíny. Koľko rôznych harmonogramov tenisových tréningov za uvedených podmienok je možné vytvoriť pre týchto osem žiakov?",
       "answer": 3840,
       "isPicture":true,
-      "picture": "otazky/math/15.jpg"
+      "picture": "otazky/math/15.png"
   },
   {
       "id": 16,
       "year": 2013,
-      "question": "Vo štvoruholníku ABCD s dĺžkami strán | AB | = 9, | BC | = 11 a | CD | = 3 sú vnútorné uhly pri vrcholoch A a C pravé (pozrite obrázok). Určte dĺžku strany AD štvoruholníka ABCD.",
+      "question": "Vo štvoruholníku ABCD s dĺžkami strán |AB| = 9, |BC| = 11 a |CD| = 3 sú vnútorné uhly pri vrcholoch A a C pravé (pozrite obrázok). Určte dĺžku strany AD štvoruholníka ABCD.",
       "answer": 7,
       "isPicture":true,
-      "picture": "otazky/math/16.jpg"
+      "picture": "otazky/math/16.png"
   },
   {
       "id": 17,
       "year": 2013,
-      "question": "Ťažisko rovnostranného trojuholníka ABC leží v začiatku súradnicovej sústavyO [0; 0] a vrchol C má súradnice [0; 4]. Vypočítajte súčet súradníc všetkých vrcholov trojuholníka ABC.",
+      "question": "Ťažisko rovnostranného trojuholníka ABC leží v začiatku súradnicovej sústavyO [0;0] a vrchol C má súradnice [0;4]. Vypočítajte súčet súradníc všetkých vrcholov trojuholníka ABC.",
       "answer": 0
   },
   {
@@ -149,7 +149,7 @@ const otazky = [
   {
       "id": 19,
       "year": 2013,
-      "question": "Obsah plášťa kužeľa je 4 cm2, obsah podstavy kužeľa je 2 cm2. Určte v stupňoch uhol(odchýlku) strany kužeľa a roviny podstavy kužeľa. (Strana kužeľa je úsečka spájajúca vrchol kužeľa s ľubovoľným bodom kružnice podstavy. Všetky strany kužeľa tvoria plášť kužeľa.)",
+      "question": "Obsah plášťa kužeľa je 4 \\(cm^2\\), obsah podstavy kužeľa je 2 \\(cm^2\\). Určte v stupňoch uhol(odchýlku) strany kužeľa a roviny podstavy kužeľa. (Strana kužeľa je úsečka spájajúca vrchol kužeľa s ľubovoľným bodom kružnice podstavy. Všetky strany kužeľa tvoria plášť kužeľa.)",
       "answer": 60
   },
   {
@@ -161,7 +161,7 @@ const otazky = [
   {
       "id": 21,
       "year": 2013,
-      "question": "Určte počet koreňov rovnice sinx = 1/2 patriacich do intervalu (− 570°; 570°).",
+      "question": "Určte počet koreňov rovnice sin x = \\(frac c d\\) patriacich do intervalu (-570°; 570°).",
       "option1": 3,
       "option2": 4,
       "option3": 5,
@@ -172,7 +172,7 @@ const otazky = [
   {
       "id": 22,
       "year": 2013,
-      "question": "Obvod a obsah kruhu sú vyjadrené rovnakým číslom x cm a x cm2. Určte v centimetroch priemer kruhu.",
+      "question": "Obvod a obsah kruhu sú vyjadrené rovnakým číslom x cm a x \\(cm^2\\). Určte v centimetroch priemer kruhu.",
       "option1": 4,
       "option2": 2,
       "option3": 1,
@@ -194,7 +194,7 @@ const otazky = [
   {
       "id": 24,
       "year": 2013,
-      "question": "Určte súradnice bodov, v ktorých sa pretínajú grafy funkcií f (x) = x2 + 2x - 14 a g(x) = x - 2. Najväčšia zo súradníc priesečníkov grafov funkcií je",
+      "question": "Určte súradnice bodov, v ktorých sa pretínajú grafy funkcií f(x) = \\(x^2\\) + 2x - 14 a g(x) = x - 2. Najväčšia zo súradníc priesečníkov grafov funkcií je",
       "option1": 2,
       "option2": 3,
       "option3": 4,
@@ -213,12 +213,12 @@ const otazky = [
       "option5": "36cm2",
       "answer": "B",
       "isPicture":true,
-      "picture": "otazky/math/25.jpg"
+      "picture": "otazky/math/25.png"
   },
   {
       "id": 26,
       "year": 2013,
-      "question": "Ak výrok B  ∧C je pravdivý a výrok B ⇒A je nepravdivý, potom pre pravdivostnú hodnotu výrokov A, B, C platí:",
+      "question": "Ak výrok B∧C je pravdivý a výrok B ⇒A je nepravdivý, potom pre pravdivostnú hodnotu výrokov A, B, C platí:",
       "option1": "Výrok A je pravdivý, výrok B je pravdivý, výrok C je pravdivý",
       "option2": "Výrok A je pravdivý, výrok B je pravdivý, výrok C je nepravdivý",
       "option3": "Výrok A je nepravdivý, výrok B je pravdivý, výrok C je pravdivý",
@@ -236,7 +236,7 @@ const otazky = [
       "option4": "f(3), f(4), f(5)",
       "option5": "f(4), f(5)",
       "isPicture" : true,
-      "picture" : "otazky/math/27.jpg",
+      "picture" : "otazky/math/27.png",
       "answer": "E"
   },
   {
@@ -249,7 +249,7 @@ const otazky = [
       "option4": "6:1",
       "option5": "7:1",
       "isPicture" : true,
-      "picture" : "otazky/math/28.jpg",
+      "picture" : "otazky/math/28.png",
       "answer": "C"
   },
   {
@@ -274,37 +274,27 @@ const otazky = [
 
 var randomNumb;
 var otazka;
-   
-randomNumb = Math.floor(Math.random() * 4);
-otazka = otazky[randomNumb];
-(otazka.id<21) ? showQuestion1_20(otazka) : showQuestion21_30(otazka);
-    
-reload.addEventListener("click", function(e){
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://example.com/MathJax.js?config=TeX-AMS-MML_CHTML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-  e.preventDefault();
-  body.style.backgroundColor="white";
-  randomNumb = Math.floor(Math.random() * 4);
-  otazka = otazky[randomNumb];
-  if(otazka.id<21){
-    showQuestion1_20(otazka);
-  }else{
-    showQuestion21_30(otazka);
-  }
-});
+let opts = {
+  // ...options...
+}
 
-function showQuestion1_20(otazka){
-  question.textContent = otazka.year+" "+ otazka.id + '. ' + otazka.question;
+function loadQuestion() {
+  body.style.backgroundColor="white";
+  randomNumb = Math.floor(Math.random() * 30);
+  otazka = otazky[randomNumb];
+  question.innerHTML = otazka.question; 
+  renderMathInElement(question, opts);
+  (otazka.id<21) ? showQuestion1_20(otazka) : showQuestion21_30(otazka);
+}
+
+
+
+function showQuestion1_20(otazka){  
   (otazka.isPicture) ? img.src = otazka.picture : img.src = "";
   answer.innerHTML = "<input type='text'><button class='btn btn-submit'>submit</button>";
 }
 
 function showQuestion21_30(otazka){
-  question.textContent = otazka.year+" "+ otazka.id + '. ' + otazka.question;
   (otazka.isPicture) ? img.src = otazka.picture : img.src = "";
   answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button>"+ otazka.option1 +"</div><div class='d-block'><button class='btn btn-B m-2'>B</button>"+ otazka.option2 +"</div><div class='d-block'><button class='btn btn-C m-2'>C</button>"+ otazka.option3 +"</div><div class='d-block'><button class='btn btn-D m-2'>D</button>"+ otazka.option4 +"</div><div class='d-block'><button class='btn btn-E m-2'>E</button>"+ otazka.option5+"<div>";
 }
