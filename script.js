@@ -266,54 +266,60 @@ const otazky = [
   {
       "id": 30,
       "year": 2013,
-      "question": "30. Populácia mravcov vzrastie za jeden týždeň o 5%. Vypočítajte, o koľko percent vzrastie populácia mravcov takýmto tempom rastu za osem týždňov.",
-      "answer": 47.75
+      "question": "30. Ktorá kocka mohla byť zložená z následujúcej siete?",
+      "isOptPicture" : true,
+      "option1": "otazky/math/30oA.png",
+      "option2": "otazky/math/30oB.png",
+      "option3": "otazky/math/30oC.png",
+      "option4": "otazky/math/30oD.png",
+      "option5": "otazky/math/30oE.png",
+      "answer": "B"
   }
 
 ]
 
-var randomNumb;
+var randomNumb = 29;
 var otazka;
 let opts;
 
 function loadQuestion() {
-  body.style.backgroundColor="white";
-  randomNumb = Math.floor(Math.random() * 30);
-  otazka = otazky[randomNumb];
-  question.textContent = otazka.question; 
-  renderMathInElement(question, opts);
-  (otazka.id<21) ? showQuestion1_20(otazka) : showQuestion21_30(otazka);
+    body.style.backgroundColor="white";
+    randomNumb = Math.floor(Math.random() * 30);
+    otazka = otazky[randomNumb];
+    question.textContent = otazka.question; 
+    renderMathInElement(question, opts);
+    (otazka.id<21) ? showQuestion1_20(otazka) : showQuestion21_30(otazka);
 }
 
 function showQuestion1_20(otazka){  
-  (otazka.isPicture) ? img.src = otazka.picture : img.src = "";
-  answer.innerHTML = "<div class='d-block'><input type='text' class='d-inline mx-1'><button class='btn btn-submit d-inline mx-1'>SUBMIT</button></div>";
+    (otazka.isPicture) ? img.src = otazka.picture : img.src = "";
+    answer.innerHTML = "<div class='d-block'><input type='text' class='d-inline mx-1'><button class='btn btn-submit d-inline mx-1'>SUBMIT</button></div>";
 }
 
 function showQuestion21_30(otazka){
-  (otazka.isPicture) ? img.src = otazka.picture : img.src = "";
-  answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><strong>"+ otazka.option1 +"</strong></div><div class='d-block'><button class='btn btn-B m-2'>B</button><strong>"+ otazka.option2 +"</strong></div><div class='d-block'><button class='btn btn-C m-2'>C</button><strong>"+ otazka.option3 +"</strong></div><div class='d-block'><button class='btn btn-D m-2'>D</button><strong>"+ otazka.option4 +"</strong></div><div class='d-block'><button class='btn btn-E m-2'>E</button><strong>"+ otazka.option5+"</strong><div>";
+    (otazka.isOptPicture) ? answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><img src="+otazka.option1+" class='img-fluid'></div><div class='d-block'><button class='btn btn-B m-2'>B</button><img src="+otazka.option2+" class='img-fluid'></div><div class='d-block'><button class='btn btn-C m-2'>C</button><img src="+otazka.option3+" class='img-fluid'></div><div class='d-block'><button class='btn btn-D m-2'>D</button><img src="+otazka.option4+" class='img-fluid'></div><div class='d-block'><button class='btn btn-E m-2'>E</button><img src="+otazka.option5+" class='img-fluid'><div>" : answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><strong>"+ otazka.option1 +"</strong></div><div class='d-block'><button class='btn btn-B m-2'>B</button><strong>"+ otazka.option2 +"</strong></div><div class='d-block'><button class='btn btn-C m-2'>C</button><strong>"+ otazka.option3 +"</strong></div><div class='d-block'><button class='btn btn-D m-2'>D</button><strong>"+ otazka.option4 +"</strong></div><div class='d-block'><button class='btn btn-E m-2'>E</button><strong>"+ otazka.option5+"</strong><div>";
+    (otazka.isPicture) ? img.src = otazka.picture : img.src = "";
 }
 
 answer.addEventListener("submit", function(e){
-  e.preventDefault();
-  if(e.submitter.textContent=="A" || e.submitter.textContent=="B" || e.submitter.textContent=="C" || e.submitter.textContent=="D" || e.submitter.textContent=="E"){
-    if(otazka.answer==e.submitter.textContent){
-        answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><strong>"+ otazka.option1 +"</strong></div><div class='d-block'><button class='btn btn-B m-2'>B</button><strong>"+ otazka.option2 +"</strong></div><div class='d-block'><button class='btn btn-C m-2'>C</button><strong>"+ otazka.option3 +"</strong></div><div class='d-block'><button class='btn btn-D m-2'>D</button><strong>"+ otazka.option4 +"</strong></div><div class='d-block'><button class='btn btn-E m-2'>E</button><strong>"+ otazka.option5+"</strong><div>";
+    e.preventDefault();
+    if(e.submitter.textContent=="A" || e.submitter.textContent=="B" || e.submitter.textContent=="C" || e.submitter.textContent=="D" || e.submitter.textContent=="E"){
+        if(otazka.answer==e.submitter.textContent){
+            (otazka.isOptPicture) ? answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><img src="+otazka.option1+" class='img-fluid'></div><div class='d-block'><button class='btn btn-B m-2'>B</button><img src="+otazka.option2+" class='img-fluid'></div><div class='d-block'><button class='btn btn-C m-2'>C</button><img src="+otazka.option3+" class='img-fluid'></div><div class='d-block'><button class='btn btn-D m-2'>D</button><img src="+otazka.option4+" class='img-fluid'></div><div class='d-block'><button class='btn btn-E m-2'>E</button><img src="+otazka.option5+" class='img-fluid'><div>" : answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><strong>"+ otazka.option1 +"</strong></div><div class='d-block'><button class='btn btn-B m-2'>B</button><strong>"+ otazka.option2 +"</strong></div><div class='d-block'><button class='btn btn-C m-2'>C</button><strong>"+ otazka.option3 +"</strong></div><div class='d-block'><button class='btn btn-D m-2'>D</button><strong>"+ otazka.option4 +"</strong></div><div class='d-block'><button class='btn btn-E m-2'>E</button><strong>"+ otazka.option5+"</strong><div>";
         buttonAnswerC(e.submitter.textContent,"lightgreen");
-    }else{
-        answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><strong>"+ otazka.option1 +"</strong></div><div class='d-block'><button class='btn btn-B m-2'>B</button><strong>"+ otazka.option2 +"</strong></div><div class='d-block'><button class='btn btn-C m-2'>C</button><strong>"+ otazka.option3 +"</strong></div><div class='d-block'><button class='btn btn-D m-2'>D</button><strong>"+ otazka.option4 +"</strong></div><div class='d-block'><button class='btn btn-E m-2'>E</button><strong>"+ otazka.option5+"</strong><div>";
+        }else{
+            (otazka.isOptPicture) ? answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><img src="+otazka.option1+" class='img-fluid'></div><div class='d-block'><button class='btn btn-B m-2'>B</button><img src="+otazka.option2+" class='img-fluid'></div><div class='d-block'><button class='btn btn-C m-2'>C</button><img src="+otazka.option3+" class='img-fluid'></div><div class='d-block'><button class='btn btn-D m-2'>D</button><img src="+otazka.option4+" class='img-fluid'></div><div class='d-block'><button class='btn btn-E m-2'>E</button><img src="+otazka.option5+" class='img-fluid'><div>" : answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><strong>"+ otazka.option1 +"</strong></div><div class='d-block'><button class='btn btn-B m-2'>B</button><strong>"+ otazka.option2 +"</strong></div><div class='d-block'><button class='btn btn-C m-2'>C</button><strong>"+ otazka.option3 +"</strong></div><div class='d-block'><button class='btn btn-D m-2'>D</button><strong>"+ otazka.option4 +"</strong></div><div class='d-block'><button class='btn btn-E m-2'>E</button><strong>"+ otazka.option5+"</strong><div>";
         buttonAnswerC(e.submitter.textContent,"red");
-    }
-  }else{
-    var value = answer.querySelector('input[type="text"]').value;
-    value = value.replace(/,/g, '.');
-    if(otazka.answer==value){
-        inputAnswerC("lightgreen");
+        }
     }else{
-        inputAnswerC("red");
+        var value = answer.querySelector('input[type="text"]').value;
+        value = value.replace(/,/g, '.');
+        if(otazka.answer==value){
+            inputAnswerC("lightgreen");
+        }else{
+            inputAnswerC("red");
+        }
     }
-  }
 })
 
 function buttonAnswerC(pismenko,farba){
