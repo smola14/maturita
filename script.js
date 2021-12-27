@@ -278,7 +278,7 @@ let opts;
 
 function loadQuestion() {
   body.style.backgroundColor="white";
-  randomNumb = Math.floor(Math.random() * 15);
+  randomNumb = Math.floor(Math.random() * 30);
   otazka = otazky[randomNumb];
   question.textContent = otazka.question; 
   renderMathInElement(question, opts);
@@ -287,40 +287,45 @@ function loadQuestion() {
 
 function showQuestion1_20(otazka){  
   (otazka.isPicture) ? img.src = otazka.picture : img.src = "";
-  answer.innerHTML = "<input type='text'><button class='btn btn-submit'>submit</button>";
+  answer.innerHTML = "<div class='d-block'><input type='text' class='d-inline mx-1'><button class='btn btn-submit d-inline mx-1'>SUBMIT</button></div>";
 }
 
 function showQuestion21_30(otazka){
   (otazka.isPicture) ? img.src = otazka.picture : img.src = "";
-  answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button>"+ otazka.option1 +"</div><div class='d-block'><button class='btn btn-B m-2'>B</button>"+ otazka.option2 +"</div><div class='d-block'><button class='btn btn-C m-2'>C</button>"+ otazka.option3 +"</div><div class='d-block'><button class='btn btn-D m-2'>D</button>"+ otazka.option4 +"</div><div class='d-block'><button class='btn btn-E m-2'>E</button>"+ otazka.option5+"<div>";
+  answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><strong>"+ otazka.option1 +"</strong></div><div class='d-block'><button class='btn btn-B m-2'>B</button><strong>"+ otazka.option2 +"</strong></div><div class='d-block'><button class='btn btn-C m-2'>C</button><strong>"+ otazka.option3 +"</strong></div><div class='d-block'><button class='btn btn-D m-2'>D</button><strong>"+ otazka.option4 +"</strong></div><div class='d-block'><button class='btn btn-E m-2'>E</button><strong>"+ otazka.option5+"</strong><div>";
 }
 
 answer.addEventListener("submit", function(e){
   e.preventDefault();
   if(e.submitter.textContent=="A" || e.submitter.textContent=="B" || e.submitter.textContent=="C" || e.submitter.textContent=="D" || e.submitter.textContent=="E"){
     if(otazka.answer==e.submitter.textContent){
-      rightAnswer();
+        answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><strong>"+ otazka.option1 +"</strong></div><div class='d-block'><button class='btn btn-B m-2'>B</button><strong>"+ otazka.option2 +"</strong></div><div class='d-block'><button class='btn btn-C m-2'>C</button><strong>"+ otazka.option3 +"</strong></div><div class='d-block'><button class='btn btn-D m-2'>D</button><strong>"+ otazka.option4 +"</strong></div><div class='d-block'><button class='btn btn-E m-2'>E</button><strong>"+ otazka.option5+"</strong><div>";
+        buttonAnswerC(e.submitter.textContent,"lightgreen");
     }else{
-      wrongAnswer();
+        answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><strong>"+ otazka.option1 +"</strong></div><div class='d-block'><button class='btn btn-B m-2'>B</button><strong>"+ otazka.option2 +"</strong></div><div class='d-block'><button class='btn btn-C m-2'>C</button><strong>"+ otazka.option3 +"</strong></div><div class='d-block'><button class='btn btn-D m-2'>D</button><strong>"+ otazka.option4 +"</strong></div><div class='d-block'><button class='btn btn-E m-2'>E</button><strong>"+ otazka.option5+"</strong><div>";
+        buttonAnswerC(e.submitter.textContent,"red");
     }
   }else{
     var value = answer.querySelector('input[type="text"]').value;
     value = value.replace(/,/g, '.');
     if(otazka.answer==value){
-      rightAnswer();
+        inputAnswerC("lightgreen");
     }else{
-      wrongAnswer();
+        inputAnswerC("red");
     }
   }
 })
 
-function rightAnswer(){
-  body.style.backgroundColor="green";
+function buttonAnswerC(pismenko,farba){
+    var buttonColor = ".btn-"+pismenko;
+    document.querySelector(buttonColor).style.backgroundColor = farba;
 }
 
-function wrongAnswer(){
-  body.style.backgroundColor="red";
+function inputAnswerC(farba){
+    answer.querySelector('input[type="text"]').style.backgroundColor = farba;
 }
+
+
 
 
 

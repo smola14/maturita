@@ -43,16 +43,16 @@ h4{
 }
 
 .btn{
-    background-color:#EE6C4D;
+    background-color:#293241;
     color:white;
+}
+
+.m-2:after{
+    padding: 50px;
 }
 
 .btn:hover{
     color: white!important;
-}
-
-.btn .m-2{
-    background-color:#293241;
 }
 
 .lead{
