@@ -274,9 +274,7 @@ const otazky = [
 
 var randomNumb;
 var otazka;
-let opts = {
-  // ...options...
-}
+let opts;
 
 function loadQuestion() {
   body.style.backgroundColor="white";
