@@ -45,7 +45,7 @@ const otazky = [
   {
       "id": 4,
       "year": 2013,
-      "question": "Vypočítajte polomer kružnice k určenej rovnicou $x^2 + y^2 + 24x + 10y = 0$",
+      "question": "Vypočítajte polomer kružnice k určenej rovnicou $a^3$",
       "answer": 13
   },
   {
@@ -280,6 +280,12 @@ otazka = otazky[randomNumb];
 (otazka.id<21) ? showQuestion1_20(otazka) : showQuestion21_30(otazka);
     
 reload.addEventListener("click", function(e){
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://example.com/MathJax.js?config=TeX-AMS-MML_CHTML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
   e.preventDefault();
   body.style.backgroundColor="white";
   randomNumb = Math.floor(Math.random() * 4);
