@@ -184,9 +184,9 @@ const otazky = [
       "id": 23,
       "year": 2013,
       "question": "23. Simona má dva žreby, každý z inej lotérie. V prvej lotérii je \\(150 000\\) žrebov a z nich vyhráva \\(50 000\\)0, v druhej lotérii je \\(500 000\\) žrebov a z nich vyhráva \\(200 000\\) žrebov. Aká veľká je pravdepodobnosť, že vyhrá aspoň jeden Simonin žreb?",
-      "option1": "\\(|x - 4| < 2π\\)",
+      "option1": "$3 * \\dfrac{40}{50}$",
       "option2": "\\(dfrac{1}{Rb}\\)",
-      "option3": "\\frac 3 5",
+      "option3": "\\(f(x) = x^2 + 2x - 14\\)",
       "option4": "\\frac 2 3",
       "option5": "\\frac 11 15",
       "answer": "C"
