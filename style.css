@@ -51,6 +51,34 @@ input[type="text"]{
     margin-top: 5px;
     width:65%;
 }
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer span:nth-child(1){
+    background-color:white;
+}
+
+footer span:nth-child(2){
+    position: absolute;
+    right:0;
+    margin-right: 5px;
+    background-color:white;
+}
+
+a{
+    text-decoration: none;
+    color: #293241;
+}
+
+a:hover{
+    color: #293241;
+}
 /* img{
     position:absolute;
     width: 35%;
