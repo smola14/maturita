@@ -70,6 +70,11 @@ h4{
     border: 3px solid #EE6C4D;
     transition: all 0.5s ease;
 }
+
+#mainIMG{
+    margin-top: 5px;
+    width:65%;
+}
 /* img{
     position:absolute;
     width: 35%;

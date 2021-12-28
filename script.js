@@ -2,7 +2,7 @@
 
 const question = document.querySelector("#question");
 const answer = document.querySelector("#answer");
-const img = document.querySelector("#imgQ");
+const mainIMG = document.querySelector("#mainIMG");
 const input = document.querySelector("input");
 const kontakt = document.querySelector(".kontakt");
 const main = document.querySelector(".main");
@@ -212,25 +212,12 @@ let opts;
 function loadQuestion() {
     body.style.backgroundColor="white";
     randomNumb = Math.floor(Math.random() * 30);
-    otazka = otazky[randomNumb];
-    question.textContent = otazka.question; 
-    renderMathInElement(question, opts); 
+    otazka = otazky[29];
+    mainIMG.src = otazka.picture;
     if(otazka.id<21){
-        showQuestion1_20(otazka)  
+          
     }else{
-        showQuestion21_30(otazka);
-        if(!otazka.isOptPicture){
-        document.querySelector("#opt-1").textContent = otazka.option1;
-        renderMathInElement(document.querySelector("#opt-1"), opts);
-        document.querySelector("#opt-2").textContent = otazka.option2;
-        renderMathInElement(document.querySelector("#opt-2"), opts); 
-        document.querySelector("#opt-3").textContent = otazka.option3;
-        renderMathInElement(document.querySelector("#opt-3"), opts); 
-        document.querySelector("#opt-4").textContent = otazka.option4;
-        renderMathInElement(document.querySelector("#opt-4"), opts); 
-        document.querySelector("#opt-5").textContent = otazka.option5;
-        renderMathInElement(document.querySelector("#opt-5"), opts); 
-        } 
+        
     }
 }
 
