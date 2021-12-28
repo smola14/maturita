@@ -18,20 +18,37 @@
 
 <body onload="loadQuestion()">
   <div class="main">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Maturita - formalita</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link mx-3" href="#">Home</a>
-            </li>
-        </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+          <ul class="navbar-nav me-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Kontakt</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">O projekte</a>
+              </li>
+          </ul>
       </div>
-    </nav>
+      <div class="mx-auto order-0">
+          <a class="navbar-brand mx-auto" href="#">Maturita - formalita</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <input type="text" class="rounded userNumber">
+              </li>
+              <li class="nav-item">
+                  <button onclick="loadQuestion()" class="btn btn-reload">RELOAD</button>
+              </li>
+          </ul>
+      </div>
+  </nav>
     <div class="container mt-4">
       <p id="question" class="lead p-1"></p>
       <img src="" alt="" id="imgQ" class="img-fluid mx-auto d-block">
@@ -39,10 +56,6 @@
         <h4 id=options></h4>
         <form id="answer" class="my-2 d-inline">
         </form>
-        <div>
-          <button onclick="loadQuestion()" class='btn btn-reload d-inline'>RELOAD</button>
-          <input class="d-inline userNumber rounded" type="text">
-        </div>
       </div>
     </div>
   </div>
