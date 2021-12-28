@@ -287,7 +287,7 @@ let opts;
 function loadQuestion() {
     body.style.backgroundColor="white";
     randomNumb = Math.floor(Math.random() * 30);
-    otazka = otazky[29];
+    otazka = otazky[randomNumb];
     question.textContent = otazka.question; 
     renderMathInElement(question, opts); 
     if(otazka.id<21){
@@ -311,7 +311,7 @@ function loadQuestion() {
 
 function showQuestion1_20(otazka){  
     (otazka.isPicture) ? img.src = otazka.picture : img.src = "";
-    answer.innerHTML = "<div class='d-block'><input type='text' class='d-inline mx-1'><button class='btn btn-submit d-inline mx-1'>SUBMIT</button></div>";
+    answer.innerHTML = "<div class='d-block'><input type='text' class='d-inline mx-1 rounded'><button class='btn btn-submit d-inline mx-1'>SUBMIT</button></div>";
 }
 
 function showQuestion21_30(otazka){
