@@ -48,10 +48,6 @@ h4{
     color:white;
 }
 
-.m-2:after{
-    padding: 50px;
-}
-
 .btn:hover{
     color: white!important;
 }
