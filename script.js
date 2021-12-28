@@ -287,13 +287,14 @@ let opts;
 function loadQuestion() {
     body.style.backgroundColor="white";
     randomNumb = Math.floor(Math.random() * 30);
-    otazka = otazky[randomNumb];
+    otazka = otazky[29];
     question.textContent = otazka.question; 
     renderMathInElement(question, opts); 
     if(otazka.id<21){
         showQuestion1_20(otazka)  
     }else{
         showQuestion21_30(otazka);
+        if(!otazka.isOptPicture){
         document.querySelector("#opt-1").textContent = otazka.option1;
         renderMathInElement(document.querySelector("#opt-1"), opts);
         document.querySelector("#opt-2").textContent = otazka.option2;
@@ -303,7 +304,8 @@ function loadQuestion() {
         document.querySelector("#opt-4").textContent = otazka.option4;
         renderMathInElement(document.querySelector("#opt-4"), opts); 
         document.querySelector("#opt-5").textContent = otazka.option5;
-        renderMathInElement(document.querySelector("#opt-5"), opts);  
+        renderMathInElement(document.querySelector("#opt-5"), opts); 
+        } 
     }
 }
 
@@ -339,7 +341,21 @@ answer.addEventListener("submit", function(e){
 })
 
 function innerOptions(odpo){
-    (odpo) ? answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><img src="+otazka.option1+" class='img-fluid'></div><div class='d-block'><button class='btn btn-B m-2'>B</button><img src="+otazka.option2+" class='img-fluid'></div><div class='d-block'><button class='btn btn-C m-2'>C</button><img src="+otazka.option3+" class='img-fluid'></div><div class='d-block'><button class='btn btn-D m-2'>D</button><img src="+otazka.option4+" class='img-fluid'></div><div class='d-block'><button class='btn btn-E m-2'>E</button><img src="+otazka.option5+" class='img-fluid'><div>" : answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><span id='opt-1'>"+ otazka.option1 +"</span></div><div class='d-block'><button class='btn btn-B m-2'>B</button><span id='opt-2'>"+ otazka.option2 +"</span></div><div class='d-block'><button class='btn btn-C m-2'>C</button><span id='opt-3'>"+ otazka.option3 +"</span></div><div class='d-block'><button class='btn btn-D m-2'>D</button><span id='opt-4'>"+ otazka.option4 +"</span></div><div class='d-block'><button class='btn btn-E m-2'>E</button><span id='opt-5'>"+ otazka.option5+"</span><div>";
+    if(odpo){
+        answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><img src="+otazka.option1+" class='img-fluid'></div><div class='d-block'><button class='btn btn-B m-2'>B</button><img src="+otazka.option2+" class='img-fluid'></div><div class='d-block'><button class='btn btn-C m-2'>C</button><img src="+otazka.option3+" class='img-fluid'></div><div class='d-block'><button class='btn btn-D m-2'>D</button><img src="+otazka.option4+" class='img-fluid'></div><div class='d-block'><button class='btn btn-E m-2'>E</button><img src="+otazka.option5+" class='img-fluid'><div>";
+    }else{
+        answer.innerHTML = "<div class='d-block'><button class='btn btn-A m-2'>A</button><span id='opt-1'>"+ otazka.option1 +"</span></div><div class='d-block'><button class='btn btn-B m-2'>B</button><span id='opt-2'>"+ otazka.option2 +"</span></div><div class='d-block'><button class='btn btn-C m-2'>C</button><span id='opt-3'>"+ otazka.option3 +"</span></div><div class='d-block'><button class='btn btn-D m-2'>D</button><span id='opt-4'>"+ otazka.option4 +"</span></div><div class='d-block'><button class='btn btn-E m-2'>E</button><span id='opt-5'>"+ otazka.option5+"</span><div>";
+        document.querySelector("#opt-1").textContent = otazka.option1;
+        renderMathInElement(document.querySelector("#opt-1"), opts);
+        document.querySelector("#opt-2").textContent = otazka.option2;
+        renderMathInElement(document.querySelector("#opt-2"), opts); 
+        document.querySelector("#opt-3").textContent = otazka.option3;
+        renderMathInElement(document.querySelector("#opt-3"), opts); 
+        document.querySelector("#opt-4").textContent = otazka.option4;
+        renderMathInElement(document.querySelector("#opt-4"), opts); 
+        document.querySelector("#opt-5").textContent = otazka.option5;
+        renderMathInElement(document.querySelector("#opt-5"), opts); 
+    }
 }
 
 function buttonAnswerC(pismenko,farba){
