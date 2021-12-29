@@ -137,6 +137,10 @@ a:hover{
     padding:5px;
     width:180px;
 }
+
+.userNumber{
+    width:180px;
+}
 /* img{
     position:absolute;
     width: 35%;
