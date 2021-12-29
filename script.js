@@ -207,7 +207,7 @@ function loadQuestion() {
     otazka = otazky[randomNumb];
     mainIMG.src = otazka.picture;
     if(otazka.id<21){
-        answer.innerHTML="<label class='form-label'>Odpoveď:</label><input type='text' class='rounded'>";      
+        answer.innerHTML="<input type='text' class='rounded'><button class='btn-submit'>Odpoveď</button>";      
     }else{
         answer.innerHTML="<button class='btn btn-A mx-2'>A</button><button class='btn btn-B mx-2'>B</button><button class='btn btn-C mx-2'>C</button><button class='btn btn-D mx-2'>D</button><button class='btn btn-E mx-2'>E</button>"; 
     }
@@ -215,7 +215,7 @@ function loadQuestion() {
 
 answer.addEventListener("submit", function(e){
     e.preventDefault();
-    if(e.submitter!=null){
+    if(e.submitter.textContent=="A" || e.submitter.textContent=="B" || e.submitter.textContent=="C" || e.submitter.textContent=="D" || e.submitter.textContent=="E"){
         if(otazka.answer==e.submitter.textContent){
             buttonAnswerC(e.submitter.textContent,"lightgreen");
         }else{

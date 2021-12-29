@@ -81,8 +81,9 @@ a:hover{
 }
 
 .btn-A:hover{
+    background-color:#636e81;
     margin-top:-10px;
-    transition:all 0.3s;
+    transition:margin-top 0.3s;
 }
 
 .btn-A:not(:hover) {
@@ -90,8 +91,9 @@ a:hover{
   }
 
 .btn-B:hover{
+    background-color:#636e81;
     margin-top:-10px;
-    transition: all 0.5s;
+    transition:margin-top 0.3s;
 }
 
 .btn-B:not(:hover) {
@@ -99,8 +101,9 @@ a:hover{
   }
 
 .btn-C:hover{
+    background-color:#636e81;
     margin-top:-10px;
-    transition: all 0.5s;
+    transition:margin-top 0.3s;
 }
 
 .btn-C:not(:hover) {
@@ -108,8 +111,9 @@ a:hover{
   }
 
 .btn-D:hover{
+    background-color:#636e81;
     margin-top:-10px;
-    transition: all 0.5s;
+    transition:margin-top 0.3s;
 }
 
 .btn-D:not(:hover) {
@@ -117,8 +121,9 @@ a:hover{
   }
 
 .btn-E:hover{
+    background-color:#636e81;
     margin-top:-10px;
-    transition: all 0.5s;
+    transition:margin-top 0.3s;
 }
 
 .btn-E:not(:hover) {
