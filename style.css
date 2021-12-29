@@ -134,13 +134,21 @@ a:hover{
 
 .btn-reload,.btn-submit,.btn-tahak{
     background-color:#293241;
-    color:white;
+    color: white !important;;
     padding:5px;
     width:180px;
 }
 
 .userNumber{
     width:180px;
+}
+
+.btn-tahak a{
+    color:white;
+}
+
+canvas{
+    border:1px solid green;
 }
 /* img{
     position:absolute;
