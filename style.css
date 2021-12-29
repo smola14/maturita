@@ -17,7 +17,7 @@ body{
 input[type="text"]{
     border: 0;
     background: white;
-    border-bottom: 2px solid #EE6C4D;
+    border: 2px solid #EE6C4D;
 }
 
 #ansform{
@@ -124,6 +124,10 @@ a:hover{
 .btn-E:not(:hover) {
     transition: all 0.3s;
   }
+
+label{
+    background:white;
+}
 /* img{
     position:absolute;
     width: 35%;
