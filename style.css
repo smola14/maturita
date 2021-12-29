@@ -137,7 +137,6 @@ a:hover{
     background-color:#293241;
     color: white !important;;
     padding:5px;
-    width:180px;
 }
 
 .btn-reload:hover,.btn-submit:hover,.btn-tahak:hover{
@@ -147,6 +146,14 @@ a:hover{
 .btn-reload:hover,.btn-tahak:hover{
     margin-left:-10px;
     transition: all 0.3s;
+}
+
+.btn-reload,.btn-tahak{    
+    width:180px;
+}
+
+.btn-submit{
+    width:120px;
 }
 
 .userNumber{
