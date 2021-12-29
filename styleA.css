@@ -14,12 +14,6 @@ body{
     background: linear-gradient(90deg, #3D5A80 50%, white 50%); */
 }
 
-input[type="text"]{
-    border: 0;
-    background: white;
-    border-bottom: 2px solid #EE6C4D;
-}
-
 #ansform{
     position: absolute;
     bottom: 0;
