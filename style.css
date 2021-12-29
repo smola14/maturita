@@ -52,6 +52,7 @@ input[type="text"]{
 #mainIMG{
     margin-top: 10px;
     width:65%;
+    z-index: 999;
 }
 
 footer{

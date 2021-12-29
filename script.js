@@ -255,44 +255,44 @@ function inputAnswerC(farba){
     answer.querySelector('input[type="text"]').style.backgroundColor = farba;
 }
 
-const canvas = document.getElementById("canvas");
-canvas.height = window.innerHeight;
-canvas.width = window.innerWidth;
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
 
-const ctx = canvas.getContext("2d");
+var radius = 5;  
+var start = 0; 
+var end = Math.PI * 2;  
+var dragging = false;
 
-let prevX = null;
-let prevY = null;
+canvas.width = 500; 
+canvas.height = 500;  
 
-ctx.lineWidth = 4;
+context.lineWidth = radius * 2;  
 
-let draw = false;
+var putPoint = function(e){
+	if(dragging){
+		context.lineTo(e.offsetX, e.offsetY);
+		context.stroke();
+		context.beginPath(); 
+		context.arc(e.offsetX, e.offsetY, radius, start, end);
+		context.fill();
+		context.beginPath();
+		context.moveTo(e.offsetX, e.offsetY);
+	}
+}
 
-// Set draw to true when mouse is pressed
-window.addEventListener("mousedown", (e) => draw = true);
-// Set draw to false when mouse is released
-window.addEventListener("mouseup", (e) => draw = false);
+var engage = function(e){
+	dragging = true;
+	putPoint(e);
+}
 
-window.addEventListener("mousemove", (e) => {
-    // if draw is false then we won't draw
-    if(prevX == null || prevY == null || !draw){
-        prevX = e.clientX;
-        prevY = e.clientY;
-        return;
-    }
+var disengage = function(){
+	dragging = false;
+	context.beginPath();
+}
 
-    let currentX = e.clientX;
-    let currentY = e.clientY;
-
-    ctx.beginPath();
-    ctx.moveTo(prevX, prevY);
-    ctx.lineTo(currentX, currentY);
-    ctx.stroke();
-
-    prevX = currentX;
-    prevY = currentY;
-});
-
+canvas.addEventListener('mousedown', engage);
+canvas.addEventListener('mousemove', putPoint);
+canvas.addEventListener('mouseup', disengage);
 
 
 
