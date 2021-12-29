@@ -207,7 +207,7 @@ function loadQuestion() {
     otazka = otazky[randomNumb];
     mainIMG.src = otazka.picture;
     if(otazka.id<21){
-        answer.innerHTML="<input type='text'><button class='btn btn-submit'>Submit</button>";      
+        answer.innerHTML="<label class='form-label'>Tvoja odpoveď:</label><input type='text'>";      
     }else{
         answer.innerHTML="<button class='btn btn-A mx-2'>A</button><button class='btn btn-B mx-2'>B</button><button class='btn btn-C mx-2'>C</button><button class='btn btn-D mx-2'>D</button><button class='btn btn-E mx-2'>E</button>"; 
     }
