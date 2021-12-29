@@ -131,10 +131,11 @@ a:hover{
     transition: all 0.3s;
   }
 
-.btn-reload,.btn-submit{
+.btn-reload,.btn-submit,.btn-tahak{
     background-color:#293241;
     color:white;
     padding:5px;
+    width:180px;
 }
 /* img{
     position:absolute;
