@@ -80,6 +80,50 @@ a:hover{
     color: #3D5A80;
 }
 
+.btn-A:hover{
+    margin-top:-10px;
+    transition:all 0.3s;
+}
+
+.btn-A:not(:hover) {
+    transition: all 0.3s;
+  }
+
+.btn-B:hover{
+    margin-top:-10px;
+    transition: all 0.5s;
+}
+
+.btn-B:not(:hover) {
+    transition: all 0.3s;
+  }
+
+.btn-C:hover{
+    margin-top:-10px;
+    transition: all 0.5s;
+}
+
+.btn-C:not(:hover) {
+    transition: all 0.3s;
+  }
+
+.btn-D:hover{
+    margin-top:-10px;
+    transition: all 0.5s;
+}
+
+.btn-D:not(:hover) {
+    transition: all 0.3s;
+  }
+
+.btn-E:hover{
+    margin-top:-10px;
+    transition: all 0.5s;
+}
+
+.btn-E:not(:hover) {
+    transition: all 0.3s;
+  }
 /* img{
     position:absolute;
     width: 35%;
