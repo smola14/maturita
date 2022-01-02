@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color:#3D5A80;
+    background-image: radial-gradient(darkgray 7%, transparent 1%),radial-gradient(#fafafa 7%, transparent 1%);
+    background-size: 20px 20px;
+    /* background: -webkit-gradient(linear, left top, right top, color-stop(50%, #3D5A80), color-stop(50%, white));
+    background: linear-gradient(90deg, #3D5A80 50%, white 50%); */
+}
+
+#ansform{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+#next{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.btn{
+    background-color:#293241;
+    color:white;
+}
+
+.btn:hover{
+    color: white!important;
+}
+
+#answer .btn{
+    border: 3px solid transparent;
+}
+
+#mainIMG{
+    margin-top: 10px;
+    width:65%;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer span:nth-child(1){
+}
+
+footer span:nth-child(2){
+    position: absolute;
+    right:0;
+    margin-right: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #293241;
+    transition: all 0.5s ease;
+}
+
+a:not(:hover){
+    transition: all 0.5s ease;
+}
+
+form{
+
+    margin: 0 auto; 
+    width: 40%;
+}
+
+body{
+    text-align: justify;
+    color: white;
+    background: rgba( 61, 90, 128, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding:20px 10px;
+    
+}
+
+/* img{
+    position:absolute;
+    width: 35%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+} */
+

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color:#3D5A80;
+    background-image: radial-gradient(darkgray 7%, transparent 1%),radial-gradient(#fafafa 7%, transparent 1%);
+    background-size: 15px 17px;
+    /* background: -webkit-gradient(linear, left top, right top, color-stop(50%, #3D5A80), color-stop(50%, white));
+    background: linear-gradient(90deg, #3D5A80 50%, white 50%); */
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer span:nth-child(1){
+}
+
+footer span:nth-child(2){
+    position: absolute;
+    right:0;
+    margin-right: 5px;
+}
+
+a:hover{
+    color: #293241;
+}
