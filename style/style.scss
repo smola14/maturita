@@ -9,7 +9,7 @@ body {
 	height: 100vh;
 	font-family: 'Roboto', sans-serif;
 	background-color: white;
-	color: #3D5A80;
+	color: $color-primary
 	background-image: radial-gradient(darkgray 7%, transparent 1%),radial-gradient(#fafafa 7%, transparent 1%);
 	background-size: 15px 17px;
 }
@@ -23,18 +23,18 @@ input[type="text"] {
 }
 .btn-tahak {
 	width: 160px;
-	background: $color-primary;
-    color: white;
 }
 .btn-reload {
 	width: 160px;
-	background: $color-primary;
-    color:white;
 }
 
-.btn-submit{
-    background: $color-primary;
+
+.btn{
+    background-color:$color-primary;
     color:white;
+    &:hover {
+		color: white;
+	}
 }
 #ansform {
 	position: absolute;

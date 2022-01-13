@@ -38,6 +38,10 @@ input[type="text"] {
   color: white;
 }
 
+.btn {
+  color: white;
+}
+
 #ansform {
   position: absolute;
   bottom: 0;
