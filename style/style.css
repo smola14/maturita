@@ -24,11 +24,18 @@ input[type="text"] {
 .btn-tahak {
   width: 160px;
   background: #3D5A80;
+  color: white;
 }
 
 .btn-reload {
   width: 160px;
   background: #3D5A80;
+  color: white;
+}
+
+.btn-submit {
+  background: #3D5A80;
+  color: white;
 }
 
 #ansform {

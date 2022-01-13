@@ -24,10 +24,17 @@ input[type="text"] {
 .btn-tahak {
 	width: 160px;
 	background: $color-primary;
+    color: white;
 }
 .btn-reload {
 	width: 160px;
 	background: $color-primary;
+    color:white;
+}
+
+.btn-submit{
+    background: $color-primary;
+    color:white;
 }
 #ansform {
 	position: absolute;
