@@ -13,6 +13,7 @@ const btn = document.querySelectorAll(".btn");
 const container = document.querySelector(".container");
 const userNumber = document.querySelector(".userNumber");
 const rok_cisloP = document.querySelector("#rok_cisloP");
+const inpSubmit = document.querySelector(".inpSubmit");
 
 const otazky = [
   {
@@ -209,7 +210,7 @@ function loadQuestion() {
     mainIMG.src = otazka.picture;
     rok_cisloP.textContent = otazka.year + " | " + otazka.id + ". príklad";
     if(otazka.id<21){
-        answer.innerHTML="<input type='text' class='shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";      
+        answer.innerHTML="<input type='text' class='shadow rounded mx-1 inpSubmit'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";      
     }else{
         answer.innerHTML="<button class='btn btn-A mx-2'>A</button><button class='btn btn-B mx-2'>B</button><button class='btn btn-C mx-2'>C</button><button class='btn btn-D mx-2'>D</button><button class='btn btn-E mx-2'>E</button>"; 
     }
@@ -219,17 +220,17 @@ answer.addEventListener("submit", function(e){
     e.preventDefault();
     if(e.submitter.textContent=="A" || e.submitter.textContent=="B" || e.submitter.textContent=="C" || e.submitter.textContent=="D" || e.submitter.textContent=="E"){
         if(otazka.answer==e.submitter.textContent){
-            buttonAnswerC(e.submitter.textContent,"lightgreen");
+            buttonAnswerC(e.submitter.textContent,"#86DC3D");
         }else{
-            buttonAnswerC(e.submitter.textContent,"red");
+            buttonAnswerC(e.submitter.textContent,"#ff5252");
         }
     }else{
         var value = answer.querySelector('input[type="text"]').value;
         value = value.replace(/,/g, '.');
         if(otazka.answer==value){
-            inputAnswerC("lightgreen");
+            inputAnswerC("#86DC3D");
         }else{
-            inputAnswerC("red");
+            inputAnswerC("#ff5252");
         }
     }
 })
@@ -240,7 +241,7 @@ userNumber.addEventListener('keypress', function (e) {
         mainIMG.src = otazka.picture;
         rok_cisloP.textContent = otazka.year + " | " + otazka.id + ". príklad";
         if(otazka.id<21){
-            answer.innerHTML="<input type='text'><button class='btn btn-submit rounded'>Submit</button>";      
+            answer.innerHTML="<input type='text' class='shadow rounded mx-1 inpSubmit'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";     
         }else{
             answer.innerHTML="<button class='btn btn-A mx-2'>A</button><button class='btn btn-B mx-2'>B</button><button class='btn btn-C mx-2'>C</button><button class='btn btn-D mx-2'>D</button><button class='btn btn-E mx-2'>E</button>"; 
         }
@@ -255,9 +256,8 @@ function buttonAnswerC(pismenko,farba){
 }
 
 function inputAnswerC(farba){
-    answer.querySelector('input[type="text"]').style.backgroundColor = farba;
+    inpSubmit.style.border = "1px solid "+farba;
 }
-
 
 
 
