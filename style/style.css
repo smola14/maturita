@@ -85,6 +85,10 @@ a {
   color: white;
 }
 
+a:hover {
+  color: white;
+}
+
 .btn-A:hover {
   margin-top: -10px;
   -webkit-transition: margin-top 0.3s;
@@ -138,6 +142,10 @@ a {
 .btn-E:not(:hover) {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.btn:active {
+  border: none;
 }
 
 .btn:hover {
