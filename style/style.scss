@@ -130,9 +130,6 @@ a {
 }
 
 .btn{
-	&:active{
-		border: none;
-	}
 	&:hover{
 		background-color: $color-secondary;
 	}

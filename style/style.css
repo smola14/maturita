@@ -144,10 +144,6 @@ a:hover {
   transition: all 0.3s;
 }
 
-.btn:active {
-  border: none;
-}
-
 .btn:hover {
   background-color: #2d4666;
 }
