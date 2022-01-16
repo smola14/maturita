@@ -12,6 +12,7 @@ const body = document.querySelector("body");
 const btn = document.querySelectorAll(".btn");
 const container = document.querySelector(".container");
 const userNumber = document.querySelector(".userNumber");
+const rok_cisloP = document.querySelector("#rok_cisloP");
 
 const otazky = [
   {
@@ -206,6 +207,7 @@ function loadQuestion() {
     randomNumb = Math.floor(Math.random() * 30);
     otazka = otazky[randomNumb];
     mainIMG.src = otazka.picture;
+    rok_cisloP.textContent = otazka.year + " | " + otazka.id + ". príklad";
     if(otazka.id<21){
         answer.innerHTML="<input type='text' class='shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";      
     }else{
@@ -236,6 +238,7 @@ userNumber.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
         otazka = otazky[(userNumber.value)-1];
         mainIMG.src = otazka.picture;
+        rok_cisloP.textContent = otazka.year + " | " + otazka.id + ". príklad";
         if(otazka.id<21){
             answer.innerHTML="<input type='text'><button class='btn btn-submit rounded'>Submit</button>";      
         }else{
