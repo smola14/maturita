@@ -82,11 +82,7 @@ footer span:nth-child(2) {
 
 a {
   text-decoration: none;
-  color: #3D5A80;
-}
-
-a:hover {
-  color: #3D5A80;
+  color: white;
 }
 
 .btn-A:hover {
