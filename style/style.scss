@@ -55,7 +55,7 @@ input[type="text"] {
 	}
 }
 #mainIMG {
-	width: 65%;
+	width: 55%;
 	z-index: 999;
 }
 footer {
@@ -130,11 +130,9 @@ a {
 }
 
 .btn{
-	&:active{
-		border: none;
-	}
 	&:hover{
 		background-color: $color-secondary;
 	}
 }
+
 

@@ -57,7 +57,7 @@ input[type="text"] {
 }
 
 #mainIMG {
-  width: 65%;
+  width: 55%;
   z-index: 999;
 }
 
@@ -142,10 +142,6 @@ a:hover {
 .btn-E:not(:hover) {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-}
-
-.btn:active {
-  border: none;
 }
 
 .btn:hover {
