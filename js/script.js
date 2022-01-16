@@ -204,6 +204,7 @@ let opts;
 
 function loadQuestion() {
     body.style.backgroundColor="white";
+    body.style.backgroundImage = "radial-gradient(darkgray 7%, transparent 1%),radial-gradient(#fafafa 7%, transparent 1%)";
     randomNumb = Math.floor(Math.random() * 30);
     otazka = otazky[randomNumb];
     mainIMG.src = otazka.picture;
@@ -257,7 +258,7 @@ function buttonAnswerC(pismenko,farba){
 
 function inputAnswerC(farba){
     answer.querySelector(".inputSubmit").style.border = "2px solid "+farba;
-    
+    body.style.backgroundImage = "radial-gradient("+farba+" 7%, transparent 1%),radial-gradient(#fafafa 7%, transparent 1%)";
 }
 
 
