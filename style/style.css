@@ -57,7 +57,6 @@ input[type="text"] {
 }
 
 #mainIMG {
-  margin-top: 5px;
   width: 65%;
   z-index: 999;
 }
@@ -91,7 +90,6 @@ a:hover {
 }
 
 .btn-A:hover {
-  background-color: #5d7799;
   margin-top: -10px;
   -webkit-transition: margin-top 0.3s;
   transition: margin-top 0.3s;
@@ -103,7 +101,6 @@ a:hover {
 }
 
 .btn-B:hover {
-  background-color: #5d7799;
   margin-top: -10px;
   -webkit-transition: margin-top 0.3s;
   transition: margin-top 0.3s;
@@ -115,7 +112,6 @@ a:hover {
 }
 
 .btn-C:hover {
-  background-color: #5d7799;
   margin-top: -10px;
   -webkit-transition: margin-top 0.3s;
   transition: margin-top 0.3s;
@@ -127,7 +123,6 @@ a:hover {
 }
 
 .btn-D:hover {
-  background-color: #5d7799;
   margin-top: -10px;
   -webkit-transition: margin-top 0.3s;
   transition: margin-top 0.3s;
@@ -139,7 +134,6 @@ a:hover {
 }
 
 .btn-E:hover {
-  background-color: #5d7799;
   margin-top: -10px;
   -webkit-transition: margin-top 0.3s;
   transition: margin-top 0.3s;
@@ -148,5 +142,9 @@ a:hover {
 .btn-E:not(:hover) {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #2d4666;
 }
 /*# sourceMappingURL=style.css.map */

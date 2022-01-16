@@ -1,5 +1,5 @@
 $color-primary:#3D5A80;
-$color-secondary:#5d7799;
+$color-secondary:#2d4666;
 
 
 * {
@@ -55,7 +55,6 @@ input[type="text"] {
 	}
 }
 #mainIMG {
-	margin-top: 5px;
 	width: 65%;
 	z-index: 999;
 }
@@ -86,7 +85,6 @@ a {
 }
 .btn-A {
 	&:hover {
-		background-color: $color-secondary;
 		margin-top: -10px;
 		transition: margin-top 0.3s;
 	}
@@ -96,7 +94,6 @@ a {
 }
 .btn-B {
 	&:hover {
-		background-color: $color-secondary;
 		margin-top: -10px;
 		transition: margin-top 0.3s;
 	}
@@ -106,7 +103,6 @@ a {
 }
 .btn-C {
 	&:hover {
-		background-color: $color-secondary;
 		margin-top: -10px;
 		transition: margin-top 0.3s;
 	}
@@ -116,7 +112,6 @@ a {
 }
 .btn-D {
 	&:hover {
-		background-color: $color-secondary;
 		margin-top: -10px;
 		transition: margin-top 0.3s;
 	}
@@ -126,12 +121,17 @@ a {
 }
 .btn-E {
 	&:hover {
-		background-color: $color-secondary;
 		margin-top: -10px;
 		transition: margin-top 0.3s;
 	}
 	&:not(:hover) {
 		transition: all 0.3s;
+	}
+}
+
+.btn{
+	&:hover{
+		background-color: $color-secondary;
 	}
 }
 
