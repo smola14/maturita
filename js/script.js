@@ -207,7 +207,7 @@ function loadQuestion() {
     otazka = otazky[randomNumb];
     mainIMG.src = otazka.picture;
     if(otazka.id<21){
-        answer.innerHTML="<input type='text' class='shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpoveď</button>";      
+        answer.innerHTML="<input type='text' class='shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";      
     }else{
         answer.innerHTML="<button class='btn btn-A mx-2'>A</button><button class='btn btn-B mx-2'>B</button><button class='btn btn-C mx-2'>C</button><button class='btn btn-D mx-2'>D</button><button class='btn btn-E mx-2'>E</button>"; 
     }
