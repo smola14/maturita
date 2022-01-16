@@ -12,9 +12,7 @@ const body = document.querySelector("body");
 const btn = document.querySelectorAll(".btn");
 const container = document.querySelector(".container");
 const userNumber = document.querySelector(".userNumber");
-const rok_cisloP = document.querySelector("#rok_cisloP");
 const inputSubmit = document.querySelector(".inputSubmit");
-const ansform = document.querySelector("#ansform");
 
 const otazky = [
   {
@@ -209,7 +207,6 @@ function loadQuestion() {
     randomNumb = Math.floor(Math.random() * 30);
     otazka = otazky[randomNumb];
     mainIMG.src = otazka.picture;
-    rok_cisloP.textContent = otazka.year + " | " + otazka.id + ". príklad";
     if(otazka.id<21){
         answer.innerHTML="<input type='text' class='inputSubmit shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";      
     }else{
@@ -219,6 +216,7 @@ function loadQuestion() {
 
 answer.addEventListener("submit", function(e){
     e.preventDefault();
+    console.log(e);
     if(e.submitter.textContent=="A" || e.submitter.textContent=="B" || e.submitter.textContent=="C" || e.submitter.textContent=="D" || e.submitter.textContent=="E"){
         if(otazka.answer==e.submitter.textContent){
             buttonAnswerC(e.submitter.textContent,"#86DC3D");
@@ -228,6 +226,7 @@ answer.addEventListener("submit", function(e){
     }else{
         var value = answer.querySelector('input[type="text"]').value;
         value = value.replace(/,/g, '.');
+        console.log(value,otazka.answer)
         if(otazka.answer==value){
             inputAnswerC("#86DC3D");
         }else{
@@ -258,6 +257,7 @@ function buttonAnswerC(pismenko,farba){
 
 function inputAnswerC(farba){
     answer.querySelector(".inputSubmit").style.border = "2px solid "+farba;
+    
 }
 
 
