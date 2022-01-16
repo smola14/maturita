@@ -241,7 +241,7 @@ userNumber.addEventListener('keypress', function (e) {
         }else{
             answer.innerHTML="<button class='btn btn-A mx-2'>A</button><button class='btn btn-B mx-2'>B</button><button class='btn btn-C mx-2'>C</button><button class='btn btn-D mx-2'>D</button><button class='btn btn-E mx-2'>E</button>"; 
         }
-        userNumber.placeholder=userNumber.value;
+        userNumber.placeholder="Číslo príkladu 1-30";
         userNumber.value="";
     }
 });
@@ -255,44 +255,6 @@ function inputAnswerC(farba){
     answer.querySelector('input[type="text"]').style.backgroundColor = farba;
 }
 
-var canvas = document.getElementById('canvas');
-var context = canvas.getContext('2d');
-
-var radius = 5;  
-var start = 0; 
-var end = Math.PI * 2;  
-var dragging = false;
-
-canvas.width = 500; 
-canvas.height = 500;  
-
-context.lineWidth = radius * 2;  
-
-var putPoint = function(e){
-	if(dragging){
-		context.lineTo(e.offsetX, e.offsetY);
-		context.stroke();
-		context.beginPath(); 
-		context.arc(e.offsetX, e.offsetY, radius, start, end);
-		context.fill();
-		context.beginPath();
-		context.moveTo(e.offsetX, e.offsetY);
-	}
-}
-
-var engage = function(e){
-	dragging = true;
-	putPoint(e);
-}
-
-var disengage = function(){
-	dragging = false;
-	context.beginPath();
-}
-
-canvas.addEventListener('mousedown', engage);
-canvas.addEventListener('mousemove', putPoint);
-canvas.addEventListener('mouseup', disengage);
 
 
 
