@@ -263,5 +263,3 @@ function inputAnswerC(farba){
 
 
 
-
-
