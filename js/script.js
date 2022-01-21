@@ -14,6 +14,9 @@ const container = document.querySelector(".container");
 const userNumber = document.querySelector(".userNumber");
 const inputSubmit = document.querySelector(".inputSubmit");
 const rokCisloP = document.querySelector("#rokCisloP");
+const btnClear = document.querySelector(".btn-clear");
+const btnBack = document.querySelector(".btn-back");
+const lineWidth = document.querySelector("#lineWidth");
 
 const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
@@ -213,7 +216,7 @@ function loadQuestion() {
     otazka = otazky[randomNumb];
     mainIMG.src = otazka.picture;
     rokCisloP.textContent = otazka.year + " | "+otazka.id+". príklad";
-    ctx.clearRect( 0, 0, ctx.canvas.width, ctx.canvas.height);
+    clearCanvas(); 
     if(otazka.id<21){
         answer.innerHTML="<input type='text' class='inputSubmit shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";      
     }else{
@@ -246,7 +249,7 @@ userNumber.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
         otazka = otazky[(userNumber.value)-1];
         mainIMG.src = otazka.picture;
-        ctx.clearRect( 0, 0, ctx.canvas.width, ctx.canvas.height);
+        clearCanvas(); 
         rok_cisloP.textContent = otazka.year + " | " + otazka.id + ". príklad";
         if(otazka.id<21){
             answer.innerHTML="<input type='text' class='inputSubmit shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";     
@@ -268,7 +271,9 @@ function inputAnswerC(farba){
     body.style.backgroundImage = "radial-gradient("+farba+" 7%, transparent 1%),radial-gradient(#fafafa 7%, transparent 1%)";
 }
 
+
 window.addEventListener("load", () => {
+    ctx.lineWidth = 3;
     canvas.height = window.innerHeight*0.85;
     canvas.width = window.innerWidth*0.85;  
     //resize
@@ -291,7 +296,6 @@ window.addEventListener("load", () => {
 
     function draw(e){
         if(!painting) return;
-        ctx.lineWidth = 2;
         ctx.lineCap = "round";
 
         ctx.lineTo(e.clientX,e.clientY);
@@ -303,6 +307,20 @@ window.addEventListener("load", () => {
     canvas.addEventListener("mousedown", startPosition);
     canvas.addEventListener("mouseup", finishedPosition);
     canvas.addEventListener("mousemove", draw);
-
 });
 
+btnClear.addEventListener("click", function(){
+    clearCanvas(); 
+});
+
+function clearCanvas(){
+    ctx.clearRect( 0, 0, ctx.canvas.width, ctx.canvas.height); 
+};
+
+lineWidth.addEventListener("change", function(){
+    ctx.lineWidth = lineWidth.value;
+});
+
+function farbaLine(farba){
+    ctx.strokeStyle = farba;
+}

@@ -29,6 +29,42 @@ input[type="text"] {
   width: 160px;
 }
 
+.btn-clear {
+  width: 160px;
+}
+
+.btnH {
+  width: 50px;
+}
+
+.btnF {
+  width: 50px;
+}
+
+.btnF:nth-child(1) {
+  background-color: black;
+}
+
+.btnF:nth-child(2) {
+  background-color: green;
+}
+
+.btnF:nth-child(3) {
+  background-color: red;
+}
+
+.btnF:nth-child(1):hover {
+  background-color: black;
+}
+
+.btnF:nth-child(2):hover {
+  background-color: green;
+}
+
+.btnF:nth-child(3):hover {
+  background-color: red;
+}
+
 .btn {
   background-color: #3D5A80;
   color: white;
@@ -155,5 +191,9 @@ a:hover {
 
 #canvas {
   position: absolute;
+}
+
+#canvas:hover {
+  cursor: crosshair;
 }
 /*# sourceMappingURL=style.css.map */

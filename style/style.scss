@@ -28,6 +28,35 @@ input[type="text"] {
 .btn-reload {
 	width: 160px;
 }
+.btn-clear {
+	width: 160px;
+}
+
+.btnH{
+	width: 50px;
+}
+
+.btnF{
+	width: 50px;
+	&:nth-child(1){
+		background-color: black;
+	}
+	&:nth-child(2){
+		background-color: green;
+	}
+	&:nth-child(3){
+		background-color: red;
+	}
+	&:nth-child(1):hover{
+		background-color: black;
+	}
+	&:nth-child(2):hover{
+		background-color: green;
+	}
+	&:nth-child(3):hover{
+		background-color: red;
+	}
+}
 
 
 .btn{
@@ -139,4 +168,7 @@ a {
 
 #canvas{
 	position: absolute;
+	&:hover{
+		cursor: crosshair;
+	}
 }
