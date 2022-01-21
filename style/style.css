@@ -58,7 +58,6 @@ input[type="text"] {
 
 #mainIMG {
   width: 65%;
-  z-index: 999;
 }
 
 footer {
@@ -69,15 +68,16 @@ footer {
   text-align: center;
 }
 
-footer span:nth-child(1) {
+footer span {
   background-color: white;
 }
 
-footer span:nth-child(2) {
-  position: absolute;
-  right: 0;
-  margin-right: 5px;
-  background-color: white;
+footer span a {
+  color: #3D5A80;
+}
+
+footer span a:hover {
+  color: #2d4666;
 }
 
 a {
@@ -146,5 +146,14 @@ a:hover {
 
 .btn:hover {
   background-color: #2d4666;
+}
+
+#rokCisloP {
+  background-color: white;
+  max-width: 230px;
+}
+
+#canvas {
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

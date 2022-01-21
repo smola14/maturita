@@ -16,13 +16,15 @@
 </head>
 
 <body onload="loadQuestion()">
+  <canvas id="canvas"></canvas>
   <div class="container">
     <div id="next">
       <input type="text" class="shadow rounded userNumber d-block my-3" placeholder="  Číslo príkladu 1-30">
       <button onclick="loadQuestion()" class="btn btn-reload d-block rounded my-3">Náhodný príklad</button>
       <a href="/tahak.jpg" target="_blank"><button class="btn btn-tahak d-block rounded my-3">Ťahák</button></a>
     </div>
-    <img alt="príklad" id="mainIMG" class="mt-2">
+    <p id="rokCisloP" class="h3 p-1"></p>
+    <img alt="príklad" id="mainIMG">
     <div id="ansform">
       <form id="answer" class="my-2 d-inline">
       </form>
@@ -30,8 +32,7 @@
   </div>
 
   <footer>
-    <span><a href="http://www.github.com/smola14" target="_blank">SMOLA</a> © 2022 | MATURITA - FORMALITA</span>
-    <span><a href="about.html">O PROJEKTE</a></span>
+    <span><a href="https://github.com/smola14" target="_blank">SMOLA</a> © 2022 | MATURITA - FORMALITA</span>
   </footer>
   
   

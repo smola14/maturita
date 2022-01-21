@@ -56,7 +56,6 @@ input[type="text"] {
 }
 #mainIMG {
 	width: 65%;
-	z-index: 999;
 }
 footer {
 	position: fixed;
@@ -65,14 +64,12 @@ footer {
 	width: 100%;
 	text-align: center;
 	span {
-		&:nth-child(1) {
-			background-color: white;
-		}
-		&:nth-child(2) {
-			position: absolute;
-			right: 0;
-			margin-right: 5px;
-			background-color: white;
+		background-color: white;
+		a{
+			color: $color-primary;
+			&:hover{
+				color:$color-secondary;
+			}
 		}
 	}
 }
@@ -135,4 +132,11 @@ a {
 	}
 }
 
+#rokCisloP{
+	background-color:white;
+	max-width: 230px;
+}
 
+#canvas{
+	position: absolute;
+}
