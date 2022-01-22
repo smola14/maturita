@@ -249,8 +249,8 @@ userNumber.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
         otazka = otazky[(userNumber.value)-1];
         mainIMG.src = otazka.picture;
-        clearCanvas(); 
-        rok_cisloP.textContent = otazka.year + " | " + otazka.id + ". príklad";
+        clearCanvas();      
+        rokCisloP.textContent = otazka.year + " | "+otazka.id+". príklad";
         if(otazka.id<21){
             answer.innerHTML="<input type='text' class='inputSubmit shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";     
         }else{
