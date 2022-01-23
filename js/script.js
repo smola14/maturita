@@ -215,7 +215,7 @@ function loadQuestion() {
     randomNumb = Math.floor(Math.random() * 30);
     otazka = otazky[randomNumb];
     mainIMG.src = otazka.picture;
-    rokCisloP.textContent = otazka.year + " | "+otazka.id+". príklad";
+    rokCisloP.textContent = otazka.id+". príklad";
     clearCanvas(); 
     if(otazka.id<21){
         answer.innerHTML="<input type='text' class='inputSubmit shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";      
@@ -250,7 +250,7 @@ userNumber.addEventListener('keypress', function (e) {
         otazka = otazky[(userNumber.value)-1];
         mainIMG.src = otazka.picture;
         clearCanvas();      
-        rokCisloP.textContent = otazka.year + " | "+otazka.id+". príklad";
+        rokCisloP.textContent = otazka.id+". príklad";
         if(otazka.id<21){
             answer.innerHTML="<input type='text' class='inputSubmit shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";     
         }else{
