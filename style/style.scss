@@ -84,7 +84,7 @@ input[type="text"] {
 	position: absolute;
 	top: 0;
 	right: 0;
-	margin-top: 10px;
+	margin-bottom: 25px;
 	margin-right: 10px;
 }
 #answer {
@@ -190,13 +190,15 @@ a {
 
 @media(max-width: 767.98px) { 
 	#mainIMG{
-		width: 95%;
+		width: 100%;
 	}
+ }
 
-	#next {
+ @media(max-width: 768px) { 
+	#next{
 		position: absolute;
-		right: 0;
-		bottom: 0!important;
+		bottom: 0 !important;
+		top:auto;
 	}
  }
 
