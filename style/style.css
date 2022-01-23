@@ -200,10 +200,23 @@ a:hover {
 }
 
 #canvas {
+  border: 2px solid black;
   position: absolute;
 }
 
 #canvas:hover {
   cursor: crosshair;
+}
+
+@media (max-width: 767.98px) {
+  #mainIMG {
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #mainIMG {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
