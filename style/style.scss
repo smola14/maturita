@@ -1,5 +1,5 @@
-$color-primary:#3D5A80;
-$color-secondary:#2d4666;
+$color-primary: #064663;
+$color-secondary:#04293A;
 
 textarea:hover, 
 textarea:active, 
@@ -38,7 +38,6 @@ input[type="text"] {
 	width: 160px;
 }
 
-
 .btn-tahak {
 	width: 160px;
 }
@@ -54,7 +53,10 @@ input[type="text"] {
 }
 
 .btnF{
-	width: 50px;
+	width:40px;
+	height:40px;
+	border-radius: 50%;
+	display: inline-block;
 	&:nth-child(1){
 		background-color: black;
 		color:black;
@@ -189,6 +191,10 @@ a {
 		background-color: $color-secondary;
 	}
 }
+
+
+
+
 
 #rokCisloP{
 	max-width: 140px;

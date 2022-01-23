@@ -22,7 +22,7 @@ body {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
   background-color: white;
-  color: #3D5A80;
+  color: #064663;
   background-image: radial-gradient(darkgray 7%, transparent 1%), radial-gradient(#fafafa 7%, transparent 1%);
   background-size: 7px 7px;
 }
@@ -30,7 +30,7 @@ body {
 input[type="text"] {
   border: 0;
   background: white;
-  border: 2px solid #3D5A80;
+  border: 2px solid #064663;
   padding: 5px;
   text-align: center;
   width: 160px;
@@ -53,7 +53,10 @@ input[type="text"] {
 }
 
 .btnF {
-  width: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .btnF:nth-child(1) {
@@ -87,7 +90,7 @@ input[type="text"] {
 }
 
 .btn {
-  background-color: #3D5A80;
+  background-color: #064663;
   color: white;
 }
 
@@ -135,11 +138,11 @@ footer span {
 }
 
 footer span a {
-  color: #3D5A80;
+  color: #064663;
 }
 
 footer span a:hover {
-  color: #2d4666;
+  color: #04293A;
 }
 
 a {
@@ -207,7 +210,7 @@ a:hover {
 }
 
 .btn:hover {
-  background-color: #2d4666;
+  background-color: #04293A;
 }
 
 #rokCisloP {
