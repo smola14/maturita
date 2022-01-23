@@ -210,7 +210,6 @@ var otazka;
 let opts;
 
 function loadQuestion() {
-    ctx.lineWidth = 25;
     body.style.backgroundColor="white";
     body.style.backgroundImage = "radial-gradient(darkgray 7%, transparent 1%),radial-gradient(#fafafa 7%, transparent 1%)";
     randomNumb = Math.floor(Math.random() * 30);
