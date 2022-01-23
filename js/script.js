@@ -229,18 +229,18 @@ answer.addEventListener("submit", function(e){
     console.log(e);
     if(e.submitter.textContent=="A" || e.submitter.textContent=="B" || e.submitter.textContent=="C" || e.submitter.textContent=="D" || e.submitter.textContent=="E"){
         if(otazka.answer==e.submitter.textContent){
-            buttonAnswerC(e.submitter.textContent,"#86DC3D");
+            buttonAnswerC(e.submitter.textContent,"#77dd77");
         }else{
-            buttonAnswerC(e.submitter.textContent,"#ff5252");
+            buttonAnswerC(e.submitter.textContent,"#FF6961");
         }
     }else{
         var value = answer.querySelector('input[type="text"]').value;
         value = value.replace(/,/g, '.');
         console.log(value,otazka.answer)
         if(otazka.answer==value){
-            inputAnswerC("#86DC3D");
+            inputAnswerC("#77dd77");
         }else{
-            inputAnswerC("#ff5252");
+            inputAnswerC("#FF6961");
         }
     }
 })
