@@ -60,33 +60,33 @@ input[type="text"] {
 }
 
 .btnF:nth-child(1) {
-  background-color: black;
-  color: black;
+  background-color: #1A1B1D;
+  color: #1A1B1D;
 }
 
 .btnF:nth-child(2) {
-  background-color: green;
-  color: green;
+  background-color: #77dd77;
+  color: #77dd77;
 }
 
 .btnF:nth-child(3) {
-  background-color: red;
-  color: red;
+  background-color: #FF6961;
+  color: #FF6961;
 }
 
 .btnF:nth-child(1):hover {
-  background-color: black;
-  color: black;
+  background-color: #1A1B1D;
+  color: #1A1B1D;
 }
 
 .btnF:nth-child(2):hover {
-  background-color: green;
-  color: green;
+  background-color: #77dd77;
+  color: #77dd77;
 }
 
 .btnF:nth-child(3):hover {
-  background-color: red;
-  color: red;
+  background-color: #FF6961;
+  color: #FF6961;
 }
 
 .btn {

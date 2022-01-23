@@ -1,5 +1,8 @@
 $color-primary: #064663;
 $color-secondary:#04293A;
+$color-red: #FF6961;
+$color-green:#77dd77;
+$color-black:#1A1B1D;
 
 textarea:hover, 
 textarea:active, 
@@ -58,28 +61,28 @@ input[type="text"] {
 	border-radius: 50%;
 	display: inline-block;
 	&:nth-child(1){
-		background-color: black;
-		color:black;
+		background-color: $color-black;
+		color:$color-black;
 	}
 	&:nth-child(2){
-		background-color: green;
-		color:green;
+		background-color:$color-green;
+		color:$color-green;
 	}
 	&:nth-child(3){
-		background-color: red;
-		color: red;
+		background-color: $color-red;
+		color: $color-red;
 	}
 	&:nth-child(1):hover{
-		background-color: black;
-		color:black;
+		background-color: $color-black;
+		color:$color-black;
 	}
 	&:nth-child(2):hover{
-		background-color: green;
-		color:green;
+		background-color: $color-green;
+		color:$color-green;
 	}
 	&:nth-child(3):hover{
-		background-color: red;
-		color: red;
+		background-color: $color-red;
+		color: $color-red;
 	}
 }
 
