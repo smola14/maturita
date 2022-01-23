@@ -14,6 +14,7 @@ body {
 	background-image: radial-gradient(darkgray 7%, transparent 1%),radial-gradient(#fafafa 7%, transparent 1%);
 	background-size: 20px 20px;
 }
+
 input[type="text"] {
 	border: 0;
 	background: white;
@@ -22,6 +23,8 @@ input[type="text"] {
 	text-align: center;
 	width: 160px;
 }
+
+
 .btn-tahak {
 	width: 160px;
 }
@@ -92,6 +95,7 @@ input[type="text"] {
 
 #lineWidth{
 	width: 160px;
+	border-bottom: 2px solid
 }
 
 #mainIMG {
@@ -187,6 +191,12 @@ a {
 @media(max-width: 767.98px) { 
 	#mainIMG{
 		width: 95%;
+	}
+
+	#next {
+		position: absolute;
+		right: 0;
+		bottom: 0!important;
 	}
  }
 

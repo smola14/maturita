@@ -100,6 +100,7 @@ input[type="text"] {
 
 #lineWidth {
   width: 160px;
+  border-bottom: 2px solid;
 }
 
 #mainIMG {
@@ -210,6 +211,11 @@ a:hover {
 @media (max-width: 767.98px) {
   #mainIMG {
     width: 95%;
+  }
+  #next {
+    position: absolute;
+    right: 0;
+    bottom: 0 !important;
   }
 }
 
