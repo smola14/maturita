@@ -210,6 +210,7 @@ var otazka;
 let opts;
 
 function loadQuestion() {
+    ctx.lineWidth = 25;
     body.style.backgroundColor="white";
     body.style.backgroundImage = "radial-gradient(darkgray 7%, transparent 1%),radial-gradient(#fafafa 7%, transparent 1%)";
     randomNumb = Math.floor(Math.random() * 30);
@@ -264,6 +265,7 @@ userNumber.addEventListener('keypress', function (e) {
 function buttonAnswerC(pismenko,farba){
     var buttonColor = ".btn-"+pismenko;
     document.querySelector(buttonColor).style.backgroundColor = farba;
+    body.style.backgroundImage = "radial-gradient("+farba+" 7%, transparent 1%),radial-gradient(#fafafa 7%, transparent 1%)";
 }
 
 function inputAnswerC(farba){
@@ -273,7 +275,6 @@ function inputAnswerC(farba){
 
 
 window.addEventListener("load", () => {
-    ctx.lineWidth = 3;
     canvas.height = window.innerHeight*0.85;
     canvas.width = window.innerWidth*0.85;  
     //resize
