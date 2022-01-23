@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ed13c2a6c3.js" crossorigin="anonymous"></script>
   <link rel="icon" href="/MF_Logo.jpg">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -19,15 +20,15 @@
   <canvas id="canvas"></canvas>
   <div class="container">
     <div id="next">
-      <input type="text" class="shadow rounded userNumber d-block my-3" placeholder="  Číslo príkladu 1-30">
-      <button onclick="loadQuestion()" class="btn btn-reload d-block rounded my-3">Náhodný príklad</button>
+      <input type="text" class="shadow rounded userNumber d-block my-2" placeholder="  Číslo príkladu 1-30">
+      <button onclick="loadQuestion()" class="btn btn-reload d-block rounded my-2">Náhodný príklad</button>
       <!-- <a href="/tahak.jpg" target="_blank"><button class="btn btn-tahak d-block rounded my-3">Ťahák</button></a> -->
-      <button class="btn btn-clear d-block rounded mt-5">Vymazať</button>
-      <input class="btn btn-clear d-block rounded my-3" type="range" id="lineWidth" min="1" max="5" step="2" value="1"/>      
-      <div class="d-block my-3">
-        <button onclick="farbaLine('black')" class="btn btnF d-inline rounded">B</button>
+      <button class="btn btn-clear d-block rounded mt-5 mb-2"><i class="fas fa-eraser"></i></button>
+      <input class="my-2" type="range" id="lineWidth" min="1" max="5" step="2" value="1"/>      
+      <div class="d-block my-2">
+        <button onclick="farbaLine('black')" class="btn btnF d-inline rounded">R</button>
         <button onclick="farbaLine('green')" class="btn btnF d-inline rounded">G</button>
-        <button onclick="farbaLine('red')"class="btn btnF d-inline rounded">R</button>
+        <button onclick="farbaLine('red')"class="btn btnF d-inline rounded">B</button>
       </div>
     </div>
     <p id="rokCisloP" class="h3 p-1"></p>

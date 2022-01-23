@@ -43,26 +43,32 @@ input[type="text"] {
 
 .btnF:nth-child(1) {
   background-color: black;
+  color: black;
 }
 
 .btnF:nth-child(2) {
   background-color: green;
+  color: green;
 }
 
 .btnF:nth-child(3) {
   background-color: red;
+  color: red;
 }
 
 .btnF:nth-child(1):hover {
   background-color: black;
+  color: black;
 }
 
 .btnF:nth-child(2):hover {
   background-color: green;
+  color: green;
 }
 
 .btnF:nth-child(3):hover {
   background-color: red;
+  color: red;
 }
 
 .btn {
@@ -90,6 +96,10 @@ input[type="text"] {
 
 #answer .btn {
   border: 3px solid transparent;
+}
+
+#lineWidth {
+  width: 160px;
 }
 
 #mainIMG {

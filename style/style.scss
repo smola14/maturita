@@ -40,21 +40,27 @@ input[type="text"] {
 	width: 50px;
 	&:nth-child(1){
 		background-color: black;
+		color:black;
 	}
 	&:nth-child(2){
 		background-color: green;
+		color:green;
 	}
 	&:nth-child(3){
 		background-color: red;
+		color: red;
 	}
 	&:nth-child(1):hover{
 		background-color: black;
+		color:black;
 	}
 	&:nth-child(2):hover{
 		background-color: green;
+		color:green;
 	}
 	&:nth-child(3):hover{
 		background-color: red;
+		color: red;
 	}
 }
 
@@ -83,6 +89,11 @@ input[type="text"] {
 		border: 3px solid transparent;
 	}
 }
+
+#lineWidth{
+	width: 160px;
+}
+
 #mainIMG {
 	width: 65%;
 }
