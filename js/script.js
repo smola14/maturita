@@ -216,7 +216,7 @@ function loadQuestion() {
     randomNumb = Math.floor(Math.random() * 30);
     otazka = otazky[randomNumb];
     mainIMG.src = otazka.picture;
-    rokCisloP.textContent = otazka.id+". príklad";
+    rokCisloP.innerHTML = "<strong>"+otazka.id+". príklad</strong>";
     clearCanvas(); 
     if(otazka.id<21){
         answer.innerHTML="<input type='text' class='inputSubmit shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";      
