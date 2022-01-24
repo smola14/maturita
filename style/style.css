@@ -89,10 +89,6 @@ input[type="text"] {
   color: #FF6961;
 }
 
-.fa-question-circle:hover {
-  content: "picus";
-}
-
 .btn {
   background-color: #3D426B;
   color: white;

@@ -205,6 +205,10 @@ const otazky = [
 
 ]
 
+tippy('.fa-question-circle', {
+    content: 'My tooltip!',
+  });
+
 var randomNumb;
 var otazka;
 let opts;
