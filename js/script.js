@@ -205,9 +205,6 @@ const otazky = [
 
 ]
 
-tippy('.fa-question-circle', {
-    content: 'My tooltip!',
-  });
 
 var randomNumb;
 var otazka;
@@ -222,7 +219,7 @@ function loadQuestion() {
     rokCisloP.textContent = otazka.id+". príklad";
     clearCanvas(); 
     if(otazka.id<21){
-        answer.innerHTML="<i class='fas fa-question-circle'></i><input type='text' class='inputSubmit shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";      
+        answer.innerHTML="<input type='text' class='inputSubmit shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";      
     }else{
         answer.innerHTML="<button class='btn btn-A mx-2'>A</button><button class='btn btn-B mx-2'>B</button><button class='btn btn-C mx-2'>C</button><button class='btn btn-D mx-2'>D</button><button class='btn btn-E mx-2'>E</button>"; 
     }
@@ -256,7 +253,7 @@ userNumber.addEventListener('keypress', function (e) {
         clearCanvas();      
         rokCisloP.textContent = otazka.id+". príklad";
         if(otazka.id<21){
-            answer.innerHTML="<i class='fas fa-question-circle'></i><input type='text' class='inputSubmit shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";     
+            answer.innerHTML="<input type='text' class='inputSubmit shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";     
         }else{
             answer.innerHTML="<button class='btn btn-A mx-2'>A</button><button class='btn btn-B mx-2'>B</button><button class='btn btn-C mx-2'>C</button><button class='btn btn-D mx-2'>D</button><button class='btn btn-E mx-2'>E</button>"; 
         }
