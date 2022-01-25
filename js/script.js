@@ -201,6 +201,186 @@ const otazky = [
       "year": 2013,
       "picture" : "otazky/math/30.png",
       "answer": "B"
+  },
+  {
+      "id": 31,
+      "year": 2019,
+      "picture" : "otazky/math/31.png",
+      "answer": 7.5
+  },
+  {
+      "id": 32,
+      "year": 2019,
+      "picture" : "otazky/math/32.png",
+      "answer": 55
+  },
+  {
+      "id": 33,
+      "year": 2019,
+      "picture" : "otazky/math/33.png",
+      "answer": -4
+  },
+  {
+      "id": 34,
+      "year": 2019,
+      "picture" : "otazky/math/34.png",
+      "answer": 8
+  },
+  {
+      "id": 35,
+      "year": 2019,
+      "picture" : "otazky/math/35.png",
+      "answer": 48
+  },
+  {
+      "id": 36,
+      "year": 2019,
+      "picture" : "otazky/math/36.png",
+      "answer": 891
+  },
+  {
+      "id": 37,
+      "year": 2019,
+      "picture" : "otazky/math/37.png",
+      "answer": 25
+  },
+  {
+      "id": 38,
+      "year": 2019,
+      "picture" : "otazky/math/38.png",
+      "answer": 2
+  },
+  {
+      "id": 39,
+      "year": 2019,
+      "picture" : "otazky/math/39.png",
+      "answer": 1.5
+  },
+  {
+      "id": 40,
+      "year": 2019,
+      "picture" : "otazky/math/40.png",
+      "answer": 1.2
+  },
+  {
+      "id": 41,
+      "year": 2019,
+      "picture" : "otazky/math/41.png",
+      "answer": 279.75
+  },
+  {
+      "id": 42,
+      "year": 2019,
+      "picture" : "otazky/math/42.png",
+      "answer": 52.5
+  },
+  {
+      "id": 43,
+      "year": 2019,
+      "picture" : "otazky/math/43.png",
+      "answer": 3
+  },
+  {
+      "id": 44,
+      "year": 2019,
+      "picture" : "otazky/math/44.png",
+      "answer": 25.56
+  },
+  {
+      "id": 45,
+      "year": 2019,
+      "picture" : "otazky/math/45.png",
+      "answer": 2
+  },
+  {
+      "id": 46,
+      "year": 2019,
+      "picture" : "otazky/math/46.png",
+      "answer": 53.13
+  },
+  {
+      "id": 47,
+      "year": 2019,
+      "picture" : "otazky/math/47.png",
+      "answer": 4
+  },
+  {
+      "id": 48,
+      "year": 2019,
+      "picture" : "otazky/math/48.png",
+      "answer": 2.48
+  },
+  {
+      "id": 49,
+      "year": 2019,
+      "picture" : "otazky/math/49.png",
+      "answer": 36.31
+  },
+  {
+      "id": 50,
+      "year": 2019,
+      "picture" : "otazky/math/50.png",
+      "answer": 0.13
+  },
+  {
+      "id": 51,
+      "year": 2019,
+      "picture" : "otazky/math/51.png",
+      "answer": "D"
+  },
+  {
+      "id": 52,
+      "year": 2019,
+      "picture" : "otazky/math/52.png",
+      "answer": "A"
+  },
+  {
+      "id": 53,
+      "year": 2019,
+      "picture" : "otazky/math/53.png",
+      "answer": "B"
+  },
+  {
+      "id": 54,
+      "year": 2019,
+      "picture" : "otazky/math/54.png",
+      "answer": "C"
+  },
+  {
+      "id": 55,
+      "year": 2019,
+      "picture" : "otazky/math/55.png",
+      "answer": "D"
+  },
+  {
+      "id": 56,
+      "year": 2019,
+      "picture" : "otazky/math/56.png",
+      "answer": "C"
+  },
+  {
+      "id": 57,
+      "year": 2019,
+      "picture" : "otazky/math/57.png",
+      "answer": "B"
+  },
+  {
+      "id": 58,
+      "year": 2019,
+      "picture" : "otazky/math/58.png",
+      "answer": "E"
+  },
+  {
+      "id": 59,
+      "year": 2019,
+      "picture" : "otazky/math/59.png",
+      "answer": "E"
+  },
+  {
+      "id": 60,
+      "year": 2019,
+      "picture" : "otazky/math/60.png",
+      "answer": "A"
   }
 
 ]
@@ -213,12 +393,12 @@ let opts;
 function loadQuestion() {
     body.style.backgroundColor="white";
     body.style.backgroundImage = "radial-gradient(darkgray 7%, transparent 1%),radial-gradient(#fafafa 7%, transparent 1%)";
-    randomNumb = Math.floor(Math.random() * 30);
+    randomNumb = Math.floor(Math.random() * 60);
     otazka = otazky[randomNumb];
     mainIMG.src = otazka.picture;
     rokCisloP.innerHTML = "<strong>"+otazka.id+". príklad</strong>";
     clearCanvas(); 
-    if(otazka.id<21){
+    if(otazka.id<21 || otazka.id > 30 || otazka.id<51){
         answer.innerHTML="<input type='text' class='inputSubmit shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";      
     }else{
         answer.innerHTML="<button class='btn btn-A mx-2'>A</button><button class='btn btn-B mx-2'>B</button><button class='btn btn-C mx-2'>C</button><button class='btn btn-D mx-2'>D</button><button class='btn btn-E mx-2'>E</button>"; 
@@ -251,8 +431,8 @@ userNumber.addEventListener('keypress', function (e) {
         otazka = otazky[(userNumber.value)-1];
         mainIMG.src = otazka.picture;
         clearCanvas();      
-        rokCisloP.textContent = otazka.id+". príklad";
-        if(otazka.id<21){
+        rokCisloP.innerHTML = "<strong>"+otazka.id+". príklad</strong>";
+        if(otazka.id<21 || otazka.id > 30 && otazka.id<51){
             answer.innerHTML="<input type='text' class='inputSubmit shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";     
         }else{
             answer.innerHTML="<button class='btn btn-A mx-2'>A</button><button class='btn btn-B mx-2'>B</button><button class='btn btn-C mx-2'>C</button><button class='btn btn-D mx-2'>D</button><button class='btn btn-E mx-2'>E</button>"; 
