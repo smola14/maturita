@@ -398,7 +398,7 @@ function loadQuestion() {
     mainIMG.src = otazka.picture;
     rokCisloP.innerHTML = "<strong>"+otazka.id+". príklad</strong>";
     clearCanvas(); 
-    if(otazka.id<21 || otazka.id > 30 || otazka.id<51){
+    if(otazka.id<21 || otazka.id > 30 && otazka.id<51){
         answer.innerHTML="<input type='text' class='inputSubmit shadow rounded mx-1'><button class='btn btn-submit rounded mx-1'>Odpovedať</button>";      
     }else{
         answer.innerHTML="<button class='btn btn-A mx-2'>A</button><button class='btn btn-B mx-2'>B</button><button class='btn btn-C mx-2'>C</button><button class='btn btn-D mx-2'>D</button><button class='btn btn-E mx-2'>E</button>"; 
