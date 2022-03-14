@@ -437,7 +437,7 @@ userNumber.addEventListener('keypress', function (e) {
         }else{
             answer.innerHTML="<button class='btn btn-A mx-2'>A</button><button class='btn btn-B mx-2'>B</button><button class='btn btn-C mx-2'>C</button><button class='btn btn-D mx-2'>D</button><button class='btn btn-E mx-2'>E</button>"; 
         }
-        userNumber.placeholder="Číslo príkladu 1-30";
+        userNumber.placeholder="Číslo príkladu 1-60";
         userNumber.value="";
     }
 });
